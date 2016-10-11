@@ -1,0 +1,183 @@
+//
+   Created by macuser on 26.09.16.
+
+extends layout
+include mixins.jade
+
+block content
+    section.section__content
+        .container-wrapper
+            +bread([
+                ['Главная'],
+                ['Детские врачи']
+            ])
+            //h2.section__content-h4.section__content-h4_m Малая хирургия
+            .main__wrapper
+                //+sidebar3()
+                .row.between
+                    .section__content
+                        h2.section__content-h4.ta-center Ветряная оспа у детей
+                        .row.custom__row.padding__row
+                            .col__50.section__content-img-border-wrapper
+                                .section__content-img-border
+                                    img(src="images/photo/9.jpg", alt="")
+                            .col__50
+                                p.text.ta-left Под термином «ветрянка» подразумевают ветряную оспу. Это инфекционное вирусное заболевание с высоким уровнем контагиозности у детей протекает в большинстве случаев в достаточно легкой форме. Тяжелое течение и осложнения не исключены у грудничков, взрослых пациентов, а также детей с низким уровнем иммунитета. При адекватном лечении осложнения развиваются не часто.
+                        h2.section__content-h2.ta-center Ветряная оспа у детей
+                        .row.tables.between
+                            .col__45
+                                .section__content-table-wrapper
+                                    table.section__content-table.section__content-table--yellow.lastnarrow
+                                        tr.heading-tr
+                                            th(colspan='2') Голова
+                                        - for (var x =0; x<8;x++)
+                                        tr.service-tr
+                                            th Услуга
+                                            th Цена
+                                        tr
+                                            td LPG эндермологический фитнес массаж за сеанс (60 мин) 2 900,00
+                                            td 1800
+                                        tr
+                                            td LPG эндермологический фитнес массаж за сеанс (60 мин) 2 900,00
+                                            td 1800
+                                        tr.heading-tr
+                                            th(colspan='2') Позвоночник
+                                        - for (var x =0; x<8;x++)
+                                        tr.order-tr
+                                            td(colspan='2')
+                                                a.button.button_red Кнопочка
+                            .col__45
+                                .section__content-table-wrapper
+                                    table.section__content-table.section__content-table--green.lastnarrow
+                                        tr.heading-tr
+                                            th(colspan='2') Голова
+                                        - for (var x =0; x<8;x++)
+                                        tr.service-tr
+                                            th Услуга
+                                            th Цена
+                                        tr
+                                            td lorem
+                                            td 1800
+                                        tr
+                                            td lorem
+                                            td 1800
+                                        tr
+                                            td lorem
+                                            td 1800
+                                        tr.service-tr
+                                            th(colspan='2') Услуга
+                                        tr
+                                            td lorem
+                                            td 1800
+                                        tr.heading-tr
+                                            th(colspan='2') Позвоночник
+                                        - for (var x =0; x<8;x++)
+                                        tr.order-tr
+                                            td(colspan='2')
+                                                a.button.button_red Кнопочка
+                        .row.tables.between
+                            .col__45
+                                .section__content-table-wrapper
+                                    table.section__content-table.section__content-table--blue.lastnarrow
+                                        tr.heading-tr
+                                            th(colspan='2') Голова
+                                        - for (var x =0; x<8;x++)
+                                        tr.service-tr
+                                            th Услуга
+                                            th Цена
+                                        tr
+                                            td LPG эндермологический фитнес массаж за сеанс (60 мин) 2 900,00
+                                            td 1800
+                                        tr
+                                            td LPG эндермологический фитнес массаж за сеанс (60 мин) 2 900,00
+                                            td 1800
+                                        tr.heading-tr
+                                            th(colspan='2') Позвоночник
+                                        - for (var x =0; x<8;x++)
+                                        tr.order-tr
+                                            td(colspan='2')
+                                                a.button.button_red Кнопочка
+                            .col__45
+                                .section__content-table-wrapper
+                                    table.section__content-table.section__content-table--viol.lastnarrow
+                                        tr.heading-tr
+                                            th(colspan='2') Голова
+                                        - for (var x =0; x<8;x++)
+                                        tr.service-tr
+                                            th Услуга
+                                            th Цена
+                                        tr
+                                            td LPG эндермологический фитнес массаж за сеанс (60 мин) 2 900,00
+                                            td 1800
+                                        tr
+                                            td LPG эндермологический фитнес массаж за сеанс (60 мин) 2 900,00
+                                            td 1800
+                                        tr.heading-tr
+                                            th(colspan='2') Позвоночник
+                                        - for (var x =0; x<8;x++)
+                                        tr.order-tr
+                                            td(colspan='2')
+                                                a.button.button_red Кнопочка
+                        h5.section__content-h5.section__content-h5_reset.ta-center У ребёнка появляется:
+                        .row.nums.responsive-column
+                            .col__100
+                                .row.center
+                                    span.big__num 1
+                                    span.big__text высокая температура (до 39,5°С)
+                                .row.center
+                                    span.big__num 2
+                                    span.big__text лихорадочная реакция;
+                                .row.center
+                                    span.big__num 3
+                                    span.big__text головная боль средней интенсивности;
+                                .row.center
+                                    span.big__num 4
+                                    span.big__text боли в абдоминальной области (не всегда);
+                                .row.center
+                                    span.big__num 5
+                                    span.big__text общее недомогание;
+                                .row.center
+                                    span.big__num 6
+                                    span.big__text признаки интоксикации (возможна тошнота и рвота);
+                        .row
+                            .col_100
+                                .section__content-list
+                                    span.str15 1999 - 2002 гг. - заведующий отделением анестезиологии и реанимации Медико-санитарной части УП ММЗ им. СИ Вавилова;
+                                    span.str15 2003 - 2004 гг. - заведующий отделением анестезиологии и реанимации 1 ГКБ г. Минска;
+                                    span.str15 2004 - по настоящее время - врач анестезиолог-реаниматолог 4 ГКБ им. Н.Е. Савченко г. Минска.
+                                    p.text.ta-left ** Под термином «ветрянка» подразумевают ветряную оспу. Это инфекционное вирусное заболевание с высоким уровнем контагиозности у детей протекает в большинстве случаев в достаточно легкой форме. Тяжелое течение и осложнения не исключены у грудничков, взрослых пациентов, а также детей с низким уровнем иммунитета. При адекватном лечении осложнения развиваются не часто.
+                        .container.cit.ta-center
+                            span.bloq
+                                p Товарищи! дальнейшее развитие различных форм деятельности способствует подготовки и реализации модели развития. Не следует, однако забывать, что сложившаяся структура организации играет.
+                            //span Томас Джефирсон
+                        .row.between.padding__row
+                            .col__50
+                                p.text.ta-right Под термином «ветрянка» подразумевают ветряную оспу. Это инфекционное вирусное заболевание с высоким уровнем контагиозности у детей протекает в большинстве случаев в достаточно легкой форме. Тяжелое течение и осложнения не исключены у грудничков, взрослых пациентов, а также детей с низким уровнем иммунитета. При адекватном лечении осложнения развиваются не часто.
+                            .col__45.section__content-img-border-wrapper
+                                .section__content-img-border
+                                    img(src="images/photo/9.jpg", alt="")
+                        .row
+                            .col__100.ta-center
+                                p.text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium beatae, ea eos facere maxime nobis quasi quidem quisquam ratione recusandae sed sint. A aliquam, distinctio eaque earum molestias vitae?
+                        .row
+                            .col__100.ta-center
+                                p.text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium beatae, ea eos facere maxime nobis quasi quidem quisquam ratione recusandae sed sint. A aliquam, distinctio eaque earum molestias vitae?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium beatae, ea eos facere maxime nobis quasi quidem quisquam ratione recusandae sed sint. A aliquam, distinctio eaque earum molestias vitae?
+                        h2.section__content-h2.ta-center Ветряная оспа у детей
+                        .row.orderprog.center-c
+                            .col__40
+                                .form-wrapper
+                                    form(action="")
+                                        .row.center-c.padding__row
+                                            select().form__input
+                                                option(value="Удобное время") Удобное время
+                                                option(value="Удобное время2") Удобное время2
+                                                option(value="Удобное время3") Удобное время3
+                                        .row.center-c.padding__row
+                                            input(type="text", placeholder='Имя*').form__input
+                                        .row.center-c.padding__row
+                                            input(type="text", placeholder='Телефон*').form__input
+                                        .row.center-c.padding__row
+                                            input(type="text", placeholder='Телефон*').form__input
+                                        .row.center-c
+                                            input(type="submit", value='Заказать').button.button_blue.button_big
+                                        .str2.ta-center Секретарь свяжется с вами в течении 1 часа

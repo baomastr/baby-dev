@@ -1,0 +1,52 @@
+extends layout
+include mixins.jade
+
+block content
+  section.section__content
+    .container-wrapper
+      +bread([
+        ['Главная'],
+        ['Детские врачи']
+      ])
+      .row.between
+        +sidebar2([
+          ['Все виды кт детям']
+        ])
+        .section__content-article
+          h2.section__content-h2 Анализы для детей
+          .bg
+            .row.padding__row.between
+              .col__31
+                .img-wrap
+                  img(src="images/photo/12.jpg", alt="")
+              .col__65
+                p.text Рекомендуется сдавать общий клинический и биохимический анализы крови (АлАТ, АсАТ, билирубин, глюкоза, общий белок, мочевина, креатинин, кальций, фосфор, калий, натрий, хлор), где отражается общее состояние ребёнка, функции внутренних органов, а также пройти обследование на скрытые вирусные инфекции, такие как цитомегаловирус, аденовирус, вирус Эпштейн-Барр, которые могут проявиться при временном снижении иммунитета на фоне акклиматизации.
+          h5.section__content-h5 Виды анализов по направлениям:
+          .section__content-tabs.row.between.wrap
+            span.jsTab.active Анализ кожи
+            span.jsTab Ухо-горло-нос
+            span.jsTab Урология
+            span.jsTab Кинекология
+            span.jsTab Тесты на аллергию 
+            span.jsTab Аналищ глаз
+          .section__content-tab-wrapper
+            .jsCont.active.fadeIn.animated
+              h5.section__content-h5 Виды анализа кожи в нашем центре:
+              .row.between
+                - for (var x = 0; x < 5; x++)
+                  ul.col__20
+                    li.section__content-li
+                      a(href="").section__content-link алергопробы
+                    li.section__content-li
+                      a(href="").section__content-link алергопробы
+            - for (var y = 0; y < 5; y++)
+              .jsCont.fadeIn.animated
+                h5.section__content-h5 Виды анализа кожи в нашем центре:
+                .row.between
+                  - for (var z = 0; z < 5; z++)
+                    ul.col__20
+                      li.section__content-li
+                        a(href="").section__content-link алергопробы
+                      li.section__content-li
+                        a(href="").section__content-link алергопробы
+          +feed

@@ -1,0 +1,61 @@
+extends layout
+include mixins.jade
+
+block content
+  section.section__content
+    .container-wrapper
+      +bread([
+        ['Главная'],
+        ['Детские врачи']
+      ])
+      h2.section__content-h2.section__content-h2_m Цены на услуги
+      .section__content-akcia
+        .bg.section__content-akcia-bg
+          h3.section__content-akcia-h3 Консультативное отделение
+          .row.between.section__content-akcia-wrapper.center
+            a(href="").section__content-akcia-link Приемы врачей
+            .section__content-akcia-right
+              span ! 
+              a(href="") Акция для этой  категории
+          .row.between.section__content-akcia-wrapper.center
+            a(href="").section__content-akcia-link Дополнительно
+            .section__content-akcia-right
+              span ! 
+              a(href="") Акция для этой  категории
+        .bg.section__content-akcia-bg
+          h3.section__content-akcia-h3 Диагностическое отделение
+          .row.between.section__content-akcia-wrapper.center
+            a(href="").section__content-akcia-link МРТ (магнитно-резонансная томография)       
+            .section__content-akcia-right
+              span ! 
+              a(href="") Акция для этой  категории
+          .row.between.section__content-akcia-wrapper.center
+            a(href="").section__content-akcia-link КТ (компьютерная томография)
+            .section__content-akcia-right
+              span ! 
+              a(href="") Акция для этой  категории
+          .row.between.section__content-akcia-wrapper.center
+            a(href="").section__content-akcia-link Биопсия
+          .row.between.section__content-akcia-wrapper.center
+            a(href="").section__content-akcia-link Функциональная диагностика (ЭКГ, мониторирование и др.)
+          .row.between.section__content-akcia-wrapper.center
+            a(href="").section__content-akcia-link Гастроскопия
+          .row.between.section__content-akcia-wrapper.center
+            a(href="").section__content-akcia-link УЗИ (ультразвуковое исследование)
+            .section__content-akcia-right
+              span ! 
+              a(href="") Акция для этой  категории
+        .bg.section__content-akcia-bg
+          h3.section__content-akcia-h3 Нейрохирургия
+          .row.between.section__content-akcia-wrapper.center
+            a(href="").section__content-akcia-link Нейрохирургия периферических нервов                                                                      
+          .row.between.section__content-akcia-wrapper.center
+            a(href="").section__content-akcia-link Анестезия
+          .row.between.section__content-akcia-wrapper.center
+            a(href="").section__content-akcia-link Дегенеративные заболевания позвоночника
+          .row.between.section__content-akcia-wrapper.center
+            a(href="").section__content-akcia-link Опухоли позвоночника, спинного мозга
+          .row.between.section__content-akcia-wrapper.center
+            a(href="").section__content-akcia-link Пластическая краниальная нейрохирургия
+          .row.between.section__content-akcia-wrapper.center
+            a(href="").section__content-akcia-link УЗИ (ультразвуковое исследование)

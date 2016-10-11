@@ -1,0 +1,26 @@
+extends layout
+include mixins.jade
+
+block content
+  section.section__content
+    .container-wrapper
+      +bread([
+        ['Главная'],
+        ['Диагностика']
+      ])
+      .row.between
+        +sidebar([
+          ['Виды диагностики']
+        ])
+        .section__content-main
+          .section__content-items
+            h2.section__content-h2 Диагностическое отделение
+            p В детском центре на Пресне представлено самое современное и новое диагностическое оборудование. Широкий спектр диагностики дает возможность исследовать все органы и системы детского организма.
+            h3.section__content-h3 Все методы диагностики:
+            .row.between.wrap
+              - for (var x = 0; x < 12; x++)
+                a(href='page10.html').section__content-item2.col__31
+                  .section__content-img2
+                    img(src="images/photo/7.jpg", alt="")
+                  .section__content-bottom 
+                    span.section__content-par МРТ детям

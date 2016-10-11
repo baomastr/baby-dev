@@ -1,0 +1,694 @@
+.col__23 
+  width 23%
+  position relative
+.menu__item_active a 
+  color blue5
+.footer__item_active a 
+  color blue3
+.col__140 
+  width 140px
+.pad__23 
+  padding-left 23px
+.col__138 
+  width 138px
+.col__32 
+  width 32% 
+  position: relative
+.col__31 
+  width 31% 
+  position: relative
+.col__69
+  width 69%
+  position: relative
+
+// controls
+
+.section__content-method-bottom
+  img 
+    width 100% 
+    max-width 100%
+.s-next
+  display: inline-block
+  vertical-align: middle
+  sprite($sprite-next)
+  a
+    width 100%
+    height @width
+  &:hover 
+    sprite($sprite-next-hover)
+.s-prev
+  display: inline-block
+  vertical-align: middle
+  sprite($sprite-prev)
+  a
+    width 100% 
+    height @width
+  &:hover 
+    sprite($sprite-prev-hover)
+.sep 
+  sprite($sprite-icon8)
+  display: inline-block
+  vertical-align: middle
+  margin 0 10px
+.prev 
+.next 
+  a 
+    width 100%
+    height @width
+    color #ccd0d1
+  &:hover 
+    a 
+      color blue
+
+// SLider 
+
+.slide-wrapper
+  max-width 1170px 
+  margin 0 auto
+.bx-wrapper .bx-pager.bx-default-pager a
+  background: transparent;
+  border: 2px solid white;
+  text-indent: -9999px;
+  display: block;
+  width: 15px;
+  height: 15px;
+  margin: 0 5px;
+  outline: 0;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 9px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.17);
+.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto
+  position: absolute;
+  width: 100%;
+  bottom: 40px;
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active
+  background: white
+.section__slider
+  position: relative
+  &:hover 
+    .bx-default-pager
+    .bx-controls-2 
+      opacity 1 
+      trs()
+.bx-default-pager
+  opacity 0
+  trs()
+  z-index 1
+.bx-controls-2 
+  opacity 0
+  trs()
+  z-index 1
+  position absolute
+  top 50%
+  display flex
+  justify-content space-between
+  width 100%
+  padding 0 30px
+  .prev 
+    sprite($sprite-s-prev)
+    a 
+      width 100% 
+      height @width
+  .next 
+    sprite($sprite-s-next)
+    a 
+      width 100% 
+      height @width
+  
+// bordered 
+bordered(color, color2)
+  &:after
+    width 20px 
+    height 2px 
+    background: color
+    content ''
+    display block
+    margin 2px 0 0 0
+    trs()
+  &:hover 
+    &:after 
+      width 100% 
+      background: color2
+      trs()
+hover() 
+  color grey2 
+  &:hover 
+    color red 
+    text-decoration: underline
+    trs()
+    
+// active 
+
+.section__content-li_active a
+.section__content-circle_active a
+.section__main-item_active a
+  color blue10
+  &:after 
+    width 100%
+.sidebar__item_active  a 
+.sidebar__item.open > a
+    color blue3
+    &:after 
+      width 100%
+      background: blue3
+section__content-span {}
+
+.span-1 
+  bold()
+  color blue4
+  font-size 30px
+  background: white
+  padding 2px 18px 5px 18px
+  border-radius 20px
+.span-2 
+  font-size 24px 
+  color white 
+  margin-right auto
+  margin-left 20px
+  
+.bg 
+  &:after 
+    content ''
+    background: url(../images/backgrounds/bg1.png)
+    width 100%
+    height 5px
+    display: block
+    margin 20px 0 0 0
+    
+.margin-top 
+  margin 45px 0 50px 0
+  
+.pagination-wrapper 
+  margin 0 0 60px 0
+  
+.full__pagination
+  li 
+    &:last-child
+      a 
+        font-size 24px !important
+        &:before 
+          position relative 
+          top -2px
+    &:nth-child(2)
+      margin-left auto
+    &:first-child
+      a 
+        width auto
+        border-radius 20px
+        padding 0 20px 
+        color white
+        background: blue
+        margin-right auto
+        &:hover 
+          background: red 
+          color white
+        &:before 
+          content ''
+          sprite($sprite-arrow2)
+          display inline-block 
+          vertical-align: middle
+          margin-right 10px
+          position relative 
+          top -2px
+          
+.section__sl-text p
+  color white
+.custom__row 
+  padding-top 30px
+.section__row-wrp
+  margin-bottom 45px
+.big__num 
+  color red 
+  font-size 48px 
+  bold()
+  margin-right 10px
+.big__text 
+  font-size 18px
+  color green
+  bold()
+.nums 
+  margin-bottom 30px
+.more 
+  color blue5
+  bold()
+  font-size 24px
+  &:before
+    content '.'
+    color blue5
+    display inline-block
+    position relative 
+    top -4px
+    margin-right 10px
+// rate 
+
+.rate__star 
+  sprite($sprite-star2)
+  &_active 
+    sprite($sprite-star)
+    
+.feed 
+  margin 50px 0 0 0
+  
+// form 
+.enter 
+  span 
+    width 4px 
+    background: grey5
+    height 18px
+    position: relative
+    top -5px
+    margin-right 10px
+  a 
+    font-size 24px 
+    color blue 
+    bold()
+    text-transform: uppercase
+    margin 20px 10px 0 0
+    &:hover 
+      color red
+.col__45
+  .str17 
+    line-height 30px
+    padding 10px 0 0 0
+.form-wrapper 
+  border 2px solid blue4
+  border-radius (20px)
+  padding 25px
+  .button 
+    margin 30px 0
+    box-shadow 0 3px 0 #d2ecf7
+    
+.accord
+  .sidebar__item 
+    position relative
+    margin-right 25px 
+    display block
+    padding-right 20px
+    padding-left 15px
+    margin-bottom 0px
+    &:before 
+      content ''
+      width 5px 
+      height @width 
+      border-radius (50%)
+      background white
+      display inline-block
+      margin-right 7px
+      position absolute
+      top 6px
+      left 0px
+  .sidebar__sub 
+    position relative 
+    top -10px
+  .sidebar__link 
+    margin-bottom 15px
+    span 
+      sprite($sprite-sbot)
+      position absolute
+      right 0px
+  .sidebar__item.open 
+    span 
+      sprite($sprite-sup)
+.img-wrap 
+  img 
+    img()
+.padding__row 
+  padding 25px 0 0px 0
+  
+.about__img
+  img
+    img()
+    display block
+.bx-wrapper-4
+  padding 20px 0 30px 0
+  h2 
+    margin-bottom 50px
+  .slide //baomastrEdited
+    max-width: 286px
+
+.cert-wrapper 
+  padding 20px 0 90px 0
+.about-wrapper 
+  padding 50px 0 10px 0
+  h3 
+    bold()
+    font-size 36px 
+    margin-bottom 20px
+    color grey2
+.padding-right 
+  padding-right 24px
+
+.pagination-wrapper_reset 
+  margin-bottom 0px
+.full__pagination_reset 
+  padding-top 50px
+  li:nth-child(2) a
+    background: transparent
+    width auto
+    color blue5
+    &:after
+    &:before
+      content '.'
+      position relative 
+      top -3px
+      margin 0px 10px
+      display inline-block
+      font-size 30px      
+    &:hover 
+      color red
+      
+.article__img 
+  img()
+  margin-bottom 30px
+
+.cit 
+  padding 40px 0 50px 0
+  p 
+    it()
+    font-size 24px
+    color grey
+    line-height 35px
+  span 
+    font-size 18px
+    padding 30px 0 0 0
+    &:after 
+    &:before 
+      content '”'
+      bold()
+      color #cccccc
+      font-size 25px
+
+.container_titel 
+  padding 0 0 30px 0
+  
+
+body .socials__ul
+  flex-grow: 1;
+.social__item
+  a 
+    border-radius (50%)
+    box-shadow 0 0 0 2px #f2f2f2
+  &:first-child
+    a 
+      sprite($sprite-soc1)
+      display block
+      &:hover 
+        sprite($sprite-soc2)
+  &:nth-child(2)
+    a 
+      sprite($sprite-soc3)
+      display block
+      &:hover 
+        sprite($sprite-soc4)
+  &:nth-child(3)
+    a 
+      sprite($sprite-soc5)
+      display block
+      &:hover 
+        sprite($sprite-soc5)
+  &:nth-child(4)
+    a 
+      sprite($sprite-soc7)
+      display block
+      &:hover 
+        sprite($sprite-soc8)
+  &:nth-child(5)
+    a 
+      sprite($sprite-soc9)
+      display block
+      &:hover 
+        sprite($sprite-soc10)
+  &:nth-child(6)
+    a 
+      sprite($sprite-soc11)
+      display block
+      &:hover 
+        sprite($sprite-soc12)
+        
+.section__content-feed:last-child
+  &:after 
+    display none
+    
+.bg-20 
+  &:after 
+    margin 40px 0 0 0 
+    
+.form-quest
+  padding-top 10px 
+  h2 
+    margin 30px 0
+.form-spec 
+  border 2px solid blue4
+  border-radius (20px)
+  padding 30px
+  input 
+    margin 0 0 30px 0
+    height 50px
+    border-radius (30px)
+  .button 
+    margin 0px
+  .form__area 
+    height 100%
+    
+.map 
+  iframe
+    height 310px
+    width 100%
+    
+.col_bg 
+  background url(../images/backgrounds/bg5.jpg) no-repeat
+  padding 30px
+  
+.c-icon-1
+  &:before
+    content ''
+    sprite($sprite-c-icon-1)
+    display inline-block
+    margin-right 10px
+    position relative
+    top -1
+.c-icon-2
+  &:before
+    content ''
+    sprite($sprite-c-icon-2)
+    display inline-block
+    margin-right 10px
+    position relative
+    top 3px 
+    left 2px
+.c-icon-3
+  &:before
+    content ''
+    sprite($sprite-c-icon-3)
+    display inline-block
+    margin-right 10px
+    position relative
+    top -1
+.section__content-contacts
+  padding 20px 0 60px 0
+.form__input_popup 
+  background #79d9d1
+  color white
+  margin 0 0 20px 0
+.popup__form 
+  textarea 
+    height 200px
+// Placeholder color
+.form__input_popup::-webkit-input-placeholder {color:white;}
+.form__input_popup::-moz-placeholder          {color:white;}/* Firefox 19+ */
+.form__input_popup:-moz-placeholder           {color:white;}/* Firefox 18- */
+.form__input_popup:-ms-input-placeholder      {color:white;}
+
+.big__rate 
+  margin-bottom 30px
+  flex-direction: row-reverse !important;
+.big__rate:not(old) > label:hover:before,
+.big__rate:not(old) > label:hover ~ label:before,
+.big__rate:not(:hover) > :checked ~ label:before
+  opacity : 1
+  cursor pointer
+.big__rate:not(old) > label:before
+  content '';
+  display block;
+  opacity  0;
+  transition opacity 0.2s linear;
+  sprite($sprite-star)
+.big__rate:not(old) > label
+  display: block;
+  float: right;
+  position: relative;
+  sprite($sprite-star2)
+.big__rate:not(old) > input
+  margin-right : -100%;
+  opacity      : 0;
+  
+.overflow 
+  overflow-x hidden
+  
+.clouds-wrapper
+  width 100% 
+  height auto 
+  position absolute
+  left 0px 
+  top 0
+// .cloud1 
+//   sprite($sprite-cloud1)
+//   position absolute
+//   top 0px
+// .cloud2 
+//   sprite($sprite-cloud2)
+//   position absolute
+//   top 0px
+// .cloud3 
+//   sprite($sprite-cloud3)
+//   position absolute
+//   top 0px
+//   right 200px
+// .cloud4 
+//   sprite($sprite-cloud4)
+//   position absolute
+//   top 0px
+//   right 0px
+.cloud1
+.cloud2
+.cloud3
+.cloud4
+  top 0px
+  position absolute
+  width 20.7%
+  trs()
+  img 
+    img()
+  a
+    position absolute
+    bottom 0px 
+    width 100% 
+    height 60px
+.cloud4 
+  right 0px 
+.cloud3
+  right 150px
+.cloud2 
+  right 300px
+  
+.section__slider-responsive
+  .cloud1, .cloud2, .cloud3, .cloud4
+    width 40%
+  .cloud1 
+    margin-top -30px
+  .cloud2 
+    margin 0px
+    right auto 
+    left 10px
+  .cloud3 
+    margin 0px
+    right 10px
+  .cloud4 
+    right 10px
+  
+.cert-wrapper img 
+  img()
+  
+.responsive-hidden-area
+.responsive-call
+  display none
+  
+
+.toggle-menu
+  background: none
+  border none
+  outline none
+  display none
+  padding-right 10px
+  padding-left 10px
+  height 40px
+  position relative 
+  left -2px
+.sandwitch
+  width 31px
+  height 31px
+  top 8px
+  bottom 0
+  left 0
+  right 0
+  margin auto
+  z-index 200
+  > span
+    width 31px
+    height 4px
+    background white
+    border none
+    border-radius 0px
+    display block
+    position relative
+.sw-topper
+  top 5px
+  transition: transform 0.5s, top 0.2s
+  display block 
+.sw-bottom 
+  top: 10px
+  transition: transform 0.5s, top 0.2s
+  transition-delay: 0.2s, 0s 
+.sw-footer 
+  top: 15px
+  transition: all 0.5s
+  transition-delay: 0.1s 
+.toggle-menu.active .sw-topper 
+.button__sub.active .sw-topper 
+  background color6
+  top: 13px
+  transform: rotate(-45deg) 
+.toggle-menu.active .sw-bottom 
+.button__sub.active .sw-bottom 
+  background color6
+  top: 10px
+  transform: rotate(45deg) 
+.toggle-menu.active .sw-footer 
+.button__sub.active .sw-footer 
+  background color6
+  opacity: 0
+  top: 0
+  transform: rotate(180deg)
+.toggle-menu
+  background: red
+.toggle-menu-2
+  position relative
+  left -10px
+  background transparent
+  top 0px
+  span 
+    background: blue2
+.responsive-call
+  right 0px 
+  top 0px
+  height 40px
+  width 46px
+  position absolute
+.r-icon 
+  width 100% 
+  height 100%
+  color white
+.section__slider-responsive
+  display none
+body .responsive-number
+  display none 
+  color white !important
+  position absolute
+  top 10px
+  left 60px
+  font-size 20px
+  width 156px
+
+.translate 
+  transform: translateX(320px);
+  trs()
+
+.overflow  
+  .section__content-main
+  .section__content-article
+    transform: translateX(320px);
+    trs()
+    
+input.button 
+  cursor pointer

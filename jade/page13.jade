@@ -1,0 +1,36 @@
+extends layout
+include mixins.jade
+
+block content
+  section.section__content
+    .container-wrapper
+      +bread([
+        ['Главная'],
+        ['Детские врачи']
+      ])
+      h2.section__content-h2 Контакты
+      .section__content-contacts
+        .row
+          .col__33.col_margin.col_bg 
+            span.str20.c-icon-1 г. Москва, ул. Партизанская, д. 41
+            a(href="tel:+74952416829").str20.c-icon-2 +7(495) 241-68-29
+            a(href="mailto:kuncevo@openclinics.ru").str20.c-icon-3 E-mail: <span>kuncevo@openclinics.ru</span>
+            span.str21 ВРЕМЯ РАБОТЫ ЦЕНТРА:
+            span.str20.str20_m пн - пт.: 8:00 — 22:00
+            span.str20.str20_m сб., вс.: 8:00 — 22:00
+            span.str20.str20_m МРТ — ежедневно с 8:00 до 22:00
+          .col__67
+            .map 
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2246.1000851210106!2d37.402659951813924!3d55.7393899804543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54ee00f062451%3A0x7656fb1cd30c60f7!2sPartizanskaya+ul.%2C+41%2C+Moskva%2C+121359!5e0!3m2!1sen!2sru!4v1469704114267" frameborder="0" style="border:0" allowfullscreen></iframe> 
+      .section__content-contact-form
+        span.section__contact-title Форма для обратной связи
+        .form 
+          form(action="")
+            .row 
+              .col__40.col_margin
+                input(type="text", placeholder='Ваше имя*').form__input
+                input(type="text", placeholder='Ваш e-mail*').form__input
+                input(type="text", placeholder='Номер телефона').form__input
+              .col__60
+                textarea(placeholder='Сообщение').form__area
+                input(type="submit", value='Отправить сообщение').button.button_blue.button_grand-m

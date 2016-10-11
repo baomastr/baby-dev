@@ -1,0 +1,57 @@
+extends layout
+include mixins.jade
+
+block content
+  section.section__content
+    .container-wrapper
+      +bread([
+        ['Главная'],
+        ['Диагностика']
+      ])
+      .row.between
+        +sidebar([
+          ['Виды диагностики']
+        ])
+        .section__content-main
+          .section__content-items
+            h2.section__content-h2 Отделение аллергологии
+            p В детском центре на Пресне представлено самое современное и новое диагностическое оборудование. Широкий спектр диагностики дает возможность исследовать все органы и системы детского организма.
+            h5.section__content-h5 Заболевания которые мы лечим:
+            .section__content-row
+              .row.between.responsive-column
+                ul.section__content-ul
+                  li.section__content-li.section__content-li_active
+                    a.section__content-link(href="") пищевая аллергия
+                  li.section__content-li
+                    a.section__content-link(href="") аллергия на пыльцу
+                ul.section__content-ul
+                  li.section__content-li
+                    a.section__content-link(href="") аддергия на лекарства
+                  li.section__content-li
+                    a.section__content-link(href="") аллергиический лерматит
+                ul.section__content-ul
+                  li.section__content-li
+                    a.section__content-link(href="") отек квинке
+                  li.section__content-li
+                    a.section__content-link(href="") аллергия на солнце
+            h5.section__content-h5 Методы, которые мы применяем:
+            .row.between.responsive-column
+              ul.section__content-ul.col__50
+                li.section__content-circle.section__content-circle_active
+                  a.section__content-link(href="") лергопробы
+              ul.section__content-ul.col__50
+                li.section__content-circle
+                  a.section__content-link(href="") всякие растворы для аллергии на цветения
+            +button
+            .row.center-c
+              h2.section__content-h2.section__content-h2_margin Доктора “Детского центра на Пресне”
+            .row.between.wrap
+              .bx-slider-3
+                - for (var x = 0; x < 12; x++)
+                  .slide.row.center-c
+                    a(href='').section__content-item.col__31
+                      .section__content-img
+                        img(src="images/photo/6.png", alt="")
+                      .section__content-name
+                        span.section__content-title Антоненко Татьяна Викторовна
+                        span.section__content-dol педиатр, к.м.н

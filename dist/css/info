@@ -1,0 +1,18 @@
+baomastr edit
+
+style.css
+
+
+.section__content-akcia-wrapper.between {
+    justify-content: space-between;
+}
+
+.section__content-main li:before
+added
+
+
+variables.css
+
+test
+
+test2

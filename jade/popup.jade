@@ -1,0 +1,64 @@
+//-jade popup.jade
+.popup
+  .container-wrapper
+    .popup__container.animated.zoomIn.jsRevPopup
+      .popup__close-wrapper
+        .popup__close
+      .popup__form
+        form(action="")
+          input(type="text", placeholder='Ваше имя*').form__input.form__input_popup
+          input(type="text", placeholder='Ваша фамилия').form__input.form__input_popup
+          textarea(placeholder='Текст отзыва*').form__area.form__input_popup
+          .big__rate.row.between
+            label(for="rating10")
+              input(type="radio", name="rating", value="10")#rating10
+            label(for="rating9")
+              input(type="radio", name="rating", value="9")#rating9
+            label(for="rating8")
+              input(type="radio", name="rating", value="8")#rating8
+            label(for="rating7")
+              input(type="radio", name="rating", value="7")#rating7
+            label(for="rating6")
+              input(type="radio", name="rating", value="6")#rating6
+            label(for="rating5")
+              input(type="radio", name="rating", value="5")#rating5
+            label(for="rating4")
+              input(type="radio", name="rating", value="4")#rating4
+            label(for="rating3")
+              input(type="radio", name="rating", value="3")#rating3
+            label(for="rating2")
+              input(type="radio", name="rating", value="2")#rating2
+            label(for="rating1")
+              input(type="radio", name="rating", value="1")#rating1
+          input(type="submit", value='Оставить отзыв').button.button_big
+    .popup__container.animated.zoomIn.jsOrdPopup
+      .popup__close-wrapper
+        .popup__close
+      .popup__form
+        form(action="")
+          input(type="text", placeholder='Ваше имя*').form__input.form__input_popup
+          input(type="text", placeholder='Телефон').form__input.form__input_popup
+          select().form__input.form__input_popup
+            option(value="Удобное время") Удобное время
+            option(value="Удобное время2") Удобное время2
+            option(value="Удобное время3") Удобное время3
+          span.str20 Мы свяжимся с Вами в течении часа!
+          input(type="submit", value='Записаться').button.button_big
+    .popup__container.animated.zoomIn.jsCallPopup
+      .popup__close-wrapper
+        .popup__close
+      .popup__form
+        form(action="")
+          input(type="text", placeholder='Ваше имя*').form__input.form__input_popup
+          input(type="text", placeholder='Телефон').form__input.form__input_popup
+          input(type="submit", value='Отправить').button.button_big
+    .popup__container.animated.zoomIn.jsProcPopup
+      .popup__close-wrapper
+        .popup__close
+      .popup__form
+        form(action="")
+          input(type="text", placeholder='Ваше имя*').form__input.form__input_popup
+          input(type="text", placeholder='Телефон').form__input.form__input_popup
+          input(type="text", placeholder='Адрес').form__input.form__input_popup
+          span.str20 Запись через сайт является предварительной. Наш оператор свяжется с вами в ближайшее время для уточнения деталей и подтверждения вызова.
+          input(type="submit", value='Отправить').button.button_big

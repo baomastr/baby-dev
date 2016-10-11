@@ -1,0 +1,36 @@
+extends layout
+include mixins.jade
+
+block content
+  section.section__content
+    .container-wrapper
+      +bread([
+        ['Главная'],
+        ['Диагностика']
+      ])
+      .row.between
+        +sidebar([])
+        .section__content-main
+          .section__content-feed-wrapper
+            - for (var x = 0 ; x < 5 ; x ++ )
+              .bg.section__content-feed
+                h2.section__news-h2 Значимость этих проблем настолько очевидна, что начало
+                span.section__news-comment 20 июня 2016
+                p.text Задача организации, в особенности же рамки и место обучения кадров представляет собой интересный эксперимент проверки направлений прогрессивного развития. Разнообразный и богатый опыт реализация намеченных пйцуланфывовых заданий в значительной степени обуславливает создание системы обучения кадров, соответсткевует насущным потребностям. Товарищи!
+                span.author Татьяна
+          .pagination-wrapper.pagination-wrapper_reset
+            ul.row.full__pagination
+              li.pagination__item 
+                a(href="").pagination__link предидущая
+              li.pagination__item.pagination__item_active
+                a(href="").pagination__link 1
+              li.pagination__item 
+                a(href="").pagination__link 2
+              li.pagination__item 
+                a(href="").pagination__link 3
+              li.pagination__item
+                a(href="").pagination__link 4
+              li.pagination__item 
+                a(href="").pagination__link 5
+              li.pagination__item 
+                a(href="").pagination__link следующая

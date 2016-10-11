@@ -1,0 +1,53 @@
+extends layout
+include mixins.jade
+
+block content
+  section.section__content
+    .container-wrapper
+      +bread([
+        ['Главная'],
+        ['Детские врачи']
+      ])
+      .row.between
+        aside
+          .sidebar
+            .sidebar__cert-wrapper
+              img(src="images/cert/1.jpg", alt="").sidebar__cert
+              img(src="images/cert/2.jpg", alt="").sidebar__cert
+              img(src="images/cert/3.jpg", alt="").sidebar__cert
+              img(src="images/cert/4.jpg", alt="").sidebar__cert
+        .section__content-main
+          .row.between.responsive-column
+            .section__content-person.col__31
+              .section__content-item.section__content-item_reset
+                .section__content-img
+                  img(src="images/photo/6.png", alt="")
+                .section__content-name
+                  .section__content-rating
+                    +rating
+                  a(href="").button.button_red.button_big.jsOrd Записаться на прием
+                  a(href="").button.button_green.button_big.jsRev Оставить отзыв
+                  span.section__content-cost Стоимость приема - 1500 р.
+            .section__content-card.col__69
+              h2.section__content-card-h2 Антоненко Татьяна Викторовна
+              span.str13 Карлиолог, специалист высшей квалификационной категории
+              span.str2 работы - 15 лет
+              .section__content-tit.row.center
+                span.section__content-icon1.static
+                h3.str14 Образование
+              .section__content-list
+                span.str15 1999 - 2002 гг. - заведующий отделением анестезиологии и реанимации Медико-санитарной части УП ММЗ им. СИ Вавилова;
+              .section__content-tit.row.center
+                span.section__content-icon2.static
+                h3.str14 Повышение квалификации
+              .section__content-list
+                span.str15 1999 - 2002 гг. - заведующий отделением анестезиологии и реанимации Медико-санитарной части УП ММЗ им. СИ Вавилова;
+                span.str15 2003 - 2004 гг. - заведующий отделением анестезиологии и реанимации 1 ГКБ г. Минска;
+                span.str15 2004 - по настоящее время - врач анестезиолог-реаниматолог 4 ГКБ им. Н.Е. Савченко г. Минска.
+          .section__content-tit.row.center
+              span.section__content-icon3.static
+              h3.str14 Опыт работы
+            .section__content-list
+              span.str15 1999 - 2002 гг. - заведующий отделением анестезиологии и реанимации Медико-санитарной части УП ММЗ им. СИ Вавилова;
+              span.str15 2003 - 2004 гг. - заведующий отделением анестезиологии и реанимации 1 ГКБ г. Минска;
+              span.str15 2004 - по настоящее время - врач анестезиолог-реаниматолог 4 ГКБ им. Н.Е. Савченко г. Минска.

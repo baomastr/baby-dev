@@ -1,0 +1,34 @@
+extends layout
+include mixins.jade
+
+block content
+  section.section__content
+    .container-wrapper
+      +bread([
+        ['Главная'],
+        ['Детские врачи']
+      ])
+      h2.section__content-h2.section__content-h2_m Малая хирургия
+      .row.between
+        +sidebar3()
+        .section__content-article
+          .section__content-table-wrapper
+            table.section__content-table
+              tr
+                th Услуга
+                th Время, мин
+                th Цена
+              tr.heading-tr
+                th(colspan='3') Голова
+              - for (var x =0; x<8;x++)
+                tr
+                  td LPG эндермологический фитнес массаж за сеанс (60 мин) 2 900,00
+                  td (30 минут)
+                  td 1800
+              tr.heading-tr 
+                th(colspan='3') Позвоночник
+              - for (var x =0; x<8;x++)
+                tr
+                  td LPG эндермологический фитнес массаж за сеанс (60 мин) 2 900,00
+                  td (30 минут)
+                  td 1800

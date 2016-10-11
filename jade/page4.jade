@@ -1,0 +1,109 @@
+extends layout
+include mixins.jade
+
+block content
+  section.section__content
+    .container-wrapper
+      +bread([
+        ['Главная'],
+        ['Детские врачи']
+      ])
+      .row.between
+        +sidebar([])
+        .section__content-article
+          h2.section__content-h2 Ветряная оспа у детей
+          .row.custom__row
+            .col__50.section__content-img-border-wrapper
+              .section__content-img-border
+                img(src="images/photo/9.jpg", alt="")
+            .col__50
+              p.text Под термином «ветрянка» подразумевают ветряную оспу. Это инфекционное вирусное заболевание с высоким уровнем контагиозности у детей протекает в большинстве случаев в достаточно легкой форме. Тяжелое течение и осложнения не исключены у грудничков, взрослых пациентов, а также детей с низким уровнем иммунитета. При адекватном лечении осложнения развиваются не часто.
+              p.text Возбудитель ветряной оспы относится к герпес-вирусам (herpes zoster). Он отличается высокой стойкостью в окружающей среде.
+          .col__100
+            p.text Как правило, вирус передается воздушно-капельным путем. Инфекционный агент проникает в организм через слизистые роговицы глаз и верхние дыхательные пути. Не исключен также контактный путь заражения вирусом. В инкубационном периоде заболевание может находиться от 1 до 3 недель (но не более недели и не менее 21 дня). Заразным для окружающих переболевший перестает быть спустя 7-10 дней от появления первых клинических признаков заболевания.
+          h5.section__content-h5 Заболевания которые мы лечим:
+          .section__content-row
+            .row.between.responsive-column
+              ul.section__content-ul
+                li.section__content-li.section__content-li_active
+                  a.section__content-link(href="") пищевая аллергия
+                li.section__content-li
+                  a.section__content-link(href="") аллергия на пыльцу
+              ul.section__content-ul
+                li.section__content-li
+                  a.section__content-link(href="") аддергия на лекарства
+                li.section__content-li
+                  a.section__content-link(href="") аллергиический лерматит
+              ul.section__content-ul
+                li.section__content-li
+                  a.section__content-link(href="") отек квинке
+                li.section__content-li
+                  a.section__content-link(href="") аллергия на солнце
+          h5.section__content-h5 Методы, которые мы применяем:
+          .row.between.responsive-column
+            ul.section__content-ul.col__50
+              li.section__content-circle.section__content-circle_active
+                a.section__content-link(href="") лергопробы
+            ul.section__content-ul.col__50
+              li.section__content-circle
+                a.section__content-link(href="") всякие растворы для аллергии на цветения
+          .section__row-wrp
+            +button
+          h5.section__content-h5.section__content-h5_reset Симтомы ветряной оспы:
+          span.str2 Первые признаки ветрянки у детей, как правило, неотличимы от «обычного» ОРВИ.
+          h5.section__content-h5.section__content-h5_reset У ребёнка появляется:
+          .row.nums.responsive-column
+            .col__50
+              .row.center
+                span.big__num 1
+                span.big__text высокая температура (до 39,5°С)
+              .row.center
+                span.big__num 2
+                span.big__text лихорадочная реакция;
+              .row.center
+                span.big__num 3
+                span.big__text головная боль средней интенсивности;
+            .col__50
+              .row.center
+                span.big__num 4
+                span.big__text боли в абдоминальной области (не всегда);
+              .row.center
+                span.big__num 5
+                span.big__text общее недомогание;
+              .row.center
+                span.big__num 6
+                span.big__text признаки интоксикации (возможна тошнота и рвота);
+          .row.between.responsive-column
+            .col__55
+              p.text Главный симптом ветрянки – характерная сыпь (вначале маленькие розовые пятна, а затем – пузырьки с прозрачной жидкостью).
+              p.text Появление пузырьков сопровождается сильным кожным зудом, что очень плохо переносится маленькими детьми. Сыпь локализуется, главным образом, на туловище, голове (как лице, так волосистой части), а также на гениталиях и слизистой оболочке полости рта. Во рту пузырьки наиболее болезненные.
+              p.text Вначале образуется округлое покраснение кожи, а затем на его месте образуется пузырек с прозрачной жидкостью. Через некоторое время они подсыхают, приобретая вид корочек. Ветрянка может отличаться волнообразным течением, поэтому характерные высыпания на коже у ребенка могут появляться несколько раз в течение одного заболевания.
+            .col__40.col__40_img
+              img(src="images/photo/10.jpg", alt="")
+          .row.center-c
+            h2.section__content-h2.section__content-h2_margin Доктора “Детского центра на Пресне”
+          .row.between.wrap
+            .bx-slider-3
+              - for (var x = 0; x < 3; x++)
+                .slide.row.center-c
+                  a(href='').section__content-item.col__31
+                    .section__content-img
+                      img(src="images/photo/6.png", alt="")
+                    .section__content-name
+                      span.section__content-title Антоненко Татьяна Викторовна
+                      span.section__content-dol педиатр, к.м.н
+          .row.center-c
+            a(href="").button.button_blue.button_grand показать еще врачей
+          .bg
+            .section__content-method
+              .section__content-method-top
+                .str16 Народные методы лечения ветряной оспы:
+                .str6 Ветрянка — заразная детская болезнь вирусного происхождения, характеризующаяся высыпанием на коже красных пятнышек, на которых впоследствии появляются пузырьки.
+              .section__content-method-bottom
+                  .row.between
+                    .col__42
+                      img(src="images/photo/11.jpg", alt="")
+                    .col__54  
+                      .str17 Лечение ветрянки отварами и настоями
+                      p Мумие является действенным народным средством лечения ветрянки. 0,1 г мумие растворить в половине стакана теплой воды. Раствор пить утром до еды. Средство имеет противовоспалительный и общеукрепляющий эффект.
+          +feed

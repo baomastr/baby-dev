@@ -1,0 +1,57 @@
+mixin footer
+  footer.footer
+    .footer__top 
+      .container-wrapper
+        .row
+          .footer__col.col__25.col_none
+            ul
+              li.footer__item
+                a(href="").footer__link о центре
+              li.footer__item
+                a(href="").footer__link новости
+              li.footer__item.footer__item_active
+                a(href="").footer__link статьи
+              li.footer__item
+                a(href="").footer__link детские болезни
+          .footer__col.col__25.col_none
+            ul
+              li.footer__item
+                a(href="").footer__link массаж на дому детям
+              li.footer__item
+                a(href="").footer__link выезд педиатра на дом
+              li.footer__item
+                a(href="").footer__link отзывы
+          .footer__col.col__25.col_none
+            span.str5 +7 (495) 308-80-67
+            span.str6 пн-пт: 8:10-21:00  сб, вс: 9:00-21:00
+            a(href="").button.button_red.jsCall заказать звонок
+          .footer__col.col__25.col__25_soc
+            .row.footer__row-but
+              .footer__icon1.static
+              span.str7 121352, г.Москва, ЗАО ул. Давыдковская, дом 5 м. Славянский бульвар
+            a(href="").button.button_red.jsCall.button_footer заказать звонок
+            .row.center.footer__s-col
+              span.str8 МЫ в соцсетях:
+              ul.row
+                li.footer__soc
+                  a(href="").footer__s-link.footer__icon3
+                li.footer__soc
+                  a(href="").footer__s-link.footer__icon4
+                li.footer__soc
+                  a(href="").footer__s-link.footer__icon5
+    .footer__bottom 
+      .container-wrapper 
+        .row.between.responsive-column
+          .footer__col.row.between.col__70
+            .footer__col.row.col__40
+              span.str9.col__140 Разработка сайта и сопровождение сайта:
+              .footer__icon2.static
+            .footer__col.col__60
+              span.str6.pad__23 Информация, размещенная на сайте, не является публичной офертой. Актуальную информацию о ценах, акциях и предложениях уточняйте у администраторов центров.
+          .footer__col.row.between.col__30
+            .footer__col
+              a(href="").footer__logo
+            .footer__col
+              span.str6.col__138 © 2010-2016 «ЛДЦК». Все права защищены
+  include scripts.jade
+  include popup.jade

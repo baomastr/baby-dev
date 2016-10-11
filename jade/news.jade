@@ -1,0 +1,46 @@
+extends layout
+include mixins.jade
+
+block content
+  section.section__content
+    .container-wrapper
+      +bread([
+        ['Главная'],
+        ['Диагностика']
+      ])
+      .section__content-news
+        .bg
+          .row.between
+            - for (var x = 0; x < 4; x++)
+              .col__23.section__content-news-item
+                a(href="").section__content-news-photo
+                  img(src="images/photo/8.jpg", alt="")
+                .section__content-news-title Значимость этих проблем настолько очевидна, что начало
+                span.section__news-comment Болезни / 10 коментариев
+                p.section__content-news-text Не следует, однако забывать, что консультация с широким активом влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий.
+                a(href="").section__news-more подробнее
+        .row.between.margin-top
+           - for (var x = 0; x < 4; x++)
+            .col__23.section__content-news-item
+              a(href="").section__content-news-photo
+                img(src="images/photo/8.jpg", alt="")
+              .section__content-news-title Значимость этих проблем настолько очевидна, что начало
+              span.section__news-comment Болезни / 10 коментариев
+              p.section__content-news-text Не следует, однако забывать, что консультация с широким активом влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий.
+              a(href="").section__news-more подробнее
+      .pagination-wrapper 
+        ul.row.full__pagination
+          li.pagination__item 
+            a(href="").pagination__link предидущая
+          li.pagination__item.pagination__item_active
+            a(href="").pagination__link 1
+          li.pagination__item 
+            a(href="").pagination__link 2
+          li.pagination__item 
+            a(href="").pagination__link 3
+          li.pagination__item
+            a(href="").pagination__link 4
+          li.pagination__item 
+            a(href="").pagination__link 5
+          li.pagination__item 
+            a(href="").pagination__link следующая

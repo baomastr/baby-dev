@@ -51,7 +51,7 @@ $APPLICATION->SetTitle("Клиника детей");
 				  <div href="" class="cloud1 animated fadeInDown"><img src="/images/clouds/cloud1.png" alt=""><a href=""></a></div>
 				  <div href="" class="cloud2 animated fadeInRight"><img src="/images/clouds/cloud2.png" alt=""><a href=""></a></div>
 				  <div href="" class="cloud3 animated fadeInLeft"><img src="/images/clouds/cloud3.png" alt=""><a href=""></a></div>
-				  <div href="" class="cloud4 animated fadeInDown"><img src="/images/clouds/cloud4.png" alt=""><a href=""></a></div>
+				  <div href="" class="cloud4 animated fadeInDown"><img src="/images/clouds/cloud4-dt.png" alt=""><a href=""></a></div>
               </div>
             </div>
           </div>
@@ -73,7 +73,7 @@ $APPLICATION->SetTitle("Клиника детей");
 				  <div href="" class="cloud1 animated fadeInDown"><img src="/images/clouds/cloud1.png" alt=""><a href=""></a></div>
 				  <div href="" class="cloud2 animated fadeInLeft"><img src="/images/clouds/cloud2.png" alt=""><a href=""></a></div>
 				  <div href="" class="cloud3 animated fadeInRight"><img src="/images/clouds/cloud3.png" alt=""><a href=""></a></div>
-				  <div href="" class="cloud4 animated fadeInDown"><img src="/images/clouds/cloud4.png" alt=""><a href=""></a></div>
+				  <div href="" class="cloud4 animated fadeInDown"><img src="/images/clouds/cloud4-dt.png" alt=""><a href=""></a></div>
               </div>
             </div>
           </div>
@@ -95,7 +95,7 @@ $APPLICATION->SetTitle("Клиника детей");
 						<div href="" class="cloud1 animated fadeInDown"><img src="/images/clouds/cloud1.png" alt=""><a href=""></a></div>
 						<div href="" class="cloud2 animated fadeInLeft"><img src="/images/clouds/cloud2.png" alt=""><a href=""></a></div>
 						<div href="" class="cloud3 animated fadeInRight"><img src="/images/clouds/cloud3.png" alt=""><a href=""></a></div>
-						<div href="" class="cloud4 animated fadeInDown"><img src="/images/clouds/cloud4.png" alt=""><a href=""></a></div>
+						<div href="" class="cloud4 animated fadeInDown"><img src="/images/clouds/cloud4-dt.png" alt=""><a href=""></a></div>
 					</div>
 				</div>
 			</div>

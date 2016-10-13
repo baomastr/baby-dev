@@ -1,0 +1,40 @@
+extends layout
+include mixins.jade
+
+block content
+    section.section__content
+        .container-wrapper
+            +bread([
+                ['Главная'],
+                ['Детские врачи']
+            ])
+            .row.between
+                +sidebar([])
+                .section__content-article
+                    h2.section__content-h2 Ветряная оспа у детей
+                    .section__row-wrp
+                        .section__content-adds
+                            h4.section__content-h4 Внимание, <span>СПЕЦПРЕДЛОЖЕНИЕ</span> для детишек!
+                        .section__acordion
+                            ul.s-acord
+                                - for (var y = 0; y < 4 ; y ++)
+                                li
+                                    a(href="")
+                                        .section__content-adds3.row.between.center
+                                            span.span-1 1
+                                            span.span-2 Стоимость на все виды КТ в выходные дни- снижена на 26%
+                                            span.button.button_red.jsOrd Записаться по акции
+                                    ul
+                                        li
+                                            .section__content-table-wrapper
+                                                table.section__content-table
+                                                    tr
+                                                        th Врачи
+                                                        th Цена, до
+                                                        th 50% скидка после КТ
+                                                    tr.heading-tr
+                                                    - for (var x =0; x<8;x++)
+                                                    tr
+                                                        td Цыганович Марина Леонидовна
+                                                        td 1300
+                                                        td 1800

@@ -2,8 +2,8 @@ $(document).ready(function() {
     if($('.main__wrapper aside .sidebar ul li').length){
         $('.main__wrapper aside .sidebar ul li').each(function(){
             if($(this).find('a').attr('href') == location.pathname){
-                $(this).html('<span>'+$(this).find('a').html()+'</span>');
-                $(this).find('span').css('font-size', '18px');
+                $(this).html('<a class="sidebar__sub-link sidebar__sub-link--active">'+$(this).find('a').html()+'</a>');
+                // $(this).find('a').css('color', '#71fff0');
             }
         });
     }

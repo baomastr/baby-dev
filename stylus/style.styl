@@ -1867,11 +1867,13 @@ h1 {
 .title__text {
   color: #fff;
 }
-.table__header .content__cell {
+.table__header .content__cell
   background: #23aae0;
   color: #fff;
   /*font-family: "eurofurence bold";*/
-}
+  &:first-child
+    text-align: center
+
 .content__row {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1890,7 +1892,7 @@ h1 {
   background-color: #fff;
 }
 .content__cell:nth-child(1) {
-  //text-align: left;
+  text-align: left;
   border-left: 1px solid #53bae9;
   width: 52%;
 }

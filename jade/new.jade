@@ -1,0 +1,15 @@
+extends layout
+include mixins.jade
+
+block content
+    section.section__content
+        .container-wrapper
+            +bread([
+                ['Главная'],
+                ['Диагностика']
+            ])
+            .row.between
+                +sidebar([
+                    ['Виды диагностики']
+                ])
+                .section__content-main

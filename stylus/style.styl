@@ -379,8 +379,7 @@ body
       
 
   &__content
-    
-    
+
     &-contact-form 
       padding 0 0 70px 0
       input 
@@ -971,7 +970,11 @@ body
       padding 0 30px 30px 30px
       background: #ebfffd
       margin 20px 0 0 0
-      
+    &-btn
+      padding: 10px
+      a
+        font-size: 20px
+        line-height: 33px
 
   &__menu
     background: blue4
@@ -1000,7 +1003,16 @@ body
 
 
 
-
+  &__article
+    &-title
+      text-align: left
+      color: blue4
+      margin-bottom: 15px
+      bold()
+    &-blue
+      //bold()
+      color: blue4
+      vertical-align: baseline
 
 aside
   width 23%
@@ -1904,6 +1916,9 @@ h1 {
 }
 .title {
   text-align: center;
+  &-blue {
+    font-size: 24px
+  }
 }
 .title__text {
   display: inline-block;

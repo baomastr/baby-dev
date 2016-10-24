@@ -1,0 +1,104 @@
+extends layout
+include mixins.jade
+
+block content
+    section.section__content
+        .container-wrapper
+            +bread([
+                ['Главная'],
+                ['Дни здорового ребенка']
+            ])
+            .row.between
+                +sidebar([
+                    ['Виды диагностики']
+                ])
+                .section__content-main
+                    .row.padding__row.between.section__article.section__content-items
+                        .col__60.col_margin
+                            h2.section__article-title Дни здорового ребенка
+                            span.section__content-a Бесплатный прием и назначение лечения
+                            p.text
+                                | Открытая клиника приглашает на “Дни здорового ребенка!"
+                                br
+                                | Наши доктора примут маленьких пациентов, дадут рекомендации родителям,
+                                //br
+                                | назначат необходимое лечение.
+                            p.text
+                                span.section__article-blue Даты проведения:
+                                |  5 - 6 ноября с 9:00 до 19:00
+                                br
+                                span.section__article-blue Только 2 дня
+                                |  все приемы наших докторов -
+                                span.section__article-blue   бесплатно.
+                            p.text
+                                span.section__article-blue.title-blue Уверенность в здоровье ребенка!
+                        .col__34
+                            .img-wrapper
+                                img(src='images/healthybaby.png')
+                    .row.center-c
+                        h2.section__content-h2.section__content-h2_margin Наши врачи:
+                    .row.between.wrap
+                        .bx-slider-3
+                            - for (var x = 0; x < 3; x++)
+                            .slide.row.between.center-c
+                                .section__content-item.col__32
+                                    .section__content-img
+                                        img(src="images/photo/6.png", alt="")
+                                    .section__content-name
+                                        span.section__content-title Антоненко Татьяна Викторовна
+                                        span.section__content-dol педиатр, к.м.н
+                                    .section__content-btn
+                                        a(href="").button.button_blue.upper бесплатный приём
+                                .section__content-item.col__32
+                                    .section__content-img
+                                        img(src="images/photo/6.png", alt="")
+                                    .section__content-name
+                                        span.section__content-title Антоненко Татьяна Викторовна
+                                        span.section__content-dol педиатр, к.м.н
+                                    .section__content-btn
+                                        a(href="").button.button_blue.upper бесплатный приём
+                                .section__content-item.col__32
+                                    .section__content-img
+                                        img(src="images/photo/6.png", alt="")
+                                    .section__content-name
+                                        span.section__content-title Антоненко Татьяна Викторовна
+                                        span.section__content-dol педиатр, к.м.н
+                                    .section__content-btn
+                                        a(href="").button.button_blue.upper бесплатный приём
+
+                    //.row.center-c
+                    //    a(href="").button.button_blue.button_grand бесплатный приём
+                    .row.center-c
+                        h2.section__content-h2.section__content-h2_margin Прием доступен только по предварительной записи
+                    .row.padding__row
+                        p.text
+                            span.section__article-blue Посещение включает в себя
+                            |  первичный прием специалиста и получение рекомендации по лечению
+                    .row.padding__row
+                        p.text
+                            | Для маленьких пациентов доступно более
+                            span.section__article-blue  20 врачебных специальностей:
+                    .row.responsive-column
+                        ul.section__content-ul.col__50
+                            li.section__content-li
+                                a.section__content-link(href="") Педиатр
+                            li.section__content-li
+                                a.section__content-link(href="") Логопед
+                            li.section__content-li
+                                a.section__content-link(href="") Детский ортопед-травматолог
+                            li.section__content-li
+                                a.section__content-link(href="") Детский хирург
+                        ul.section__content-ul.col__50
+                            li.section__content-li
+                                a.section__content-link(href="") Детский ортопед-травматолог
+                            li.section__content-li
+                                a.section__content-link(href="") Детский хирург
+                            li.section__content-li
+                                a.section__content-link(href="") Педиатр
+                            li.section__content-li
+                                a.section__content-link(href="") Логопед
+                    .row.padding__row
+                        .row.padding__row
+                            p.text
+                                span.section__article-blue Бесплатно посетить клинику
+                                |  можно 5 и 6 ноября с 9:00 до 19:00 по адресу: г. Москва, улица 1905 года, д. 7с, стр. 1

@@ -1955,13 +1955,15 @@ h1 {
 .content .content__row:nth-child(odd) .content__cell{
   background: #e5f8ff;
 }
-.content__cell {
+.content__cell
   text-align: center;
   padding: 10px;
   width: 12%;
   border-right: 1px solid #53bae9;
   background-color: #fff;
-}
+  &.col__20
+    width: 20%
+
 .content__cell:nth-child(1) {
   text-align: left;
   border-left: 1px solid #53bae9;

@@ -1182,6 +1182,40 @@ aside
         width: 12%
 
 
+
+.docslide
+  position: relative
+  .section__content-item
+    padding: 10px 0 0 0
+  .bx-wrapper
+    .bx-controls-direction
+      a
+        display: block
+        top: 30%
+    .bx-prev
+      background: url('/images/test/prev.png') center no-repeat
+      width: 36px;
+      height: 36px;
+    .bx-next
+      background: url('/images/test/next.png') center no-repeat
+      width: 36px;
+      height: 36px;
+
+
+//.ctrls
+//  span
+//    position: absolute
+//    top: 45%
+//    width: 36px;
+//    height: 36px;
+//    a
+//      z-index 10
+//  #prev
+//    left: 0
+//    background: url('/images/test/prev.png') center no-repeat
+//  #next
+//    right: 0
+//    background: url('/images/test/next.png') center no-repeat
 /*baomastrEdit*/
 
 .lk {
@@ -1688,6 +1722,14 @@ h1 {
       width: 100%
   .cloud2
     right 300px
+
+  .docslide
+    position: relative
+    .bx-wrapper
+      .bx-controls-direction
+        a
+          display: none;
+
 @media only screen and (max-width : 500px)
 
   .section__sl h2
@@ -1856,6 +1898,14 @@ h1 {
   .container-wrapper
     .container-wrapper
       padding: 0;
+
+  .responsive-column
+    .col__50
+      width: 100%
+      margin: 0
+  .hidden-xs
+    display: none
+
 @media only screen and (max-width : 320px)
   body 
     min-width 320px

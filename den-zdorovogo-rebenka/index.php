@@ -19,7 +19,7 @@ $APPLICATION->SetTitle("");
     </div>
     <div class="row between padding__row wrap docslide">
         <div class="bx-slider-7">
-            <div class="slide row between center-c">
+            <div class="slide row padding__row between center-c">
                 <div class="section__content-item col__31">
                     <div class="section__content-img"><img src="/images/test/6.png" alt=""></div>
                     <div class="section__content-name"><span class="section__content-title">Антоненко Татьяна Викторовна</span><br>
@@ -57,7 +57,7 @@ $APPLICATION->SetTitle("");
                     <div class="section__content-btn"><a href="" class="button button_blue upper jsOrdDoctor">бесплатный приём</a></div>
                 </div>
             </div>
-            <div class="slide row between center-c">
+            <div class="slide row padding__row between center-c">
                 <div class="section__content-item col__31">
                     <div class="section__content-img"><img src="/images/test/6.png" alt=""></div>
                     <div class="section__content-name"><span class="section__content-title">Антоненко Татьяна Викторовна</span><br>

@@ -1,7 +1,9 @@
 $(document).ready(function() {
     if($('.main__wrapper aside .sidebar ul li').length){
         $('.main__wrapper aside .sidebar ul li').each(function(){
-            if($(this).find('a').attr('href') == location.pathname){
+            //console.log($(this).find('a').attr('href') + " == " + location.pathname);
+            if($.trim($(this).find('a').attr('href')) == location.pathname){
+
                 $(this).html('<a class="sidebar__sub-link sidebar__sub-link--active">'+$(this).find('a').html()+'</a>');
                 // $(this).find('a').css('color', '#71fff0');
             }
@@ -149,6 +151,14 @@ $(document).ready(function() {
         slideMargin: 5
     });
 
+    var slider7 = $('.bx-slider-7').bxSlider({
+        pager: true,
+        controls: true,
+        auto: true,
+        speed: 1000,
+        pause: 5000
+    });
+
     // Scroll to top
     $().click(function () {
         $('body,html').animate({
@@ -170,7 +180,7 @@ $(document).ready(function() {
 
 
     $(window).scroll(function() {
-        if ($(this).scrollTop() >= 104){
+        if ($(this).scrollTop() >= $(window).height()){
             $('.header__sticky').removeClass('jsNone');
         } else {
             $('.header__sticky').addClass('jsNone');
@@ -207,6 +217,7 @@ $(document).ready(function() {
 
         /* собираем данные с элементов страницы: */
         // var formData = $(this).serialize();
+
         var $form = $( this ),
             h1_form = $('h1').text(),
             h2_form = $('h2').text(),
@@ -216,7 +227,7 @@ $(document).ready(function() {
             name = $form.find( 'input[name="name"]' ).val(),
             usr_name = $form.find( 'input[name="usr_name"]' ).val(),
             usr_email = $form.find( 'input[name="usr_email"]' ).val(),
-            comment = $form.find( 'textarea[name="comment"]' ).val(),
+            comment = $form.find( 'textarea[name="comment"]' ).eq(0).val() || $form.find( 'textarea[name="comment"]' ).eq(1).val(),
             rating = $form.find( 'input[name="rating"]:checked' ).val(),
             phone = $form.find( 'input[name="phone"]' ).val(),
             diapazon = $form.find( 'select[name="diapazon"]>option' ).val(),
@@ -312,6 +323,22 @@ $(document).ready(function() {
     $('.table__title').click(function() {
         $(this).siblings('.content').toggleClass("open");
     });
+
+    if($('.content.fadeIn.animated').length){
+        $('.content.fadeIn.animated').eq(0).addClass('open');
+        if($('.content__row').eq(0).find('.content__cell').length == 2){
+            $('.content__cell:nth-child(1)').css('width','92%');
+        }
+        if($('.content__row').eq(0).find('.content__cell').length == 4){
+            $('.content__cell:nth-child(1)').css('width','72%');   
+        }
+    }
+    
+    try{
+       $('.fancybox').fancybox(); 
+    }catch(e){
+        
+    }
 
 });
 

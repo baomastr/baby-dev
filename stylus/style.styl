@@ -636,6 +636,12 @@ body
         color blue 
         font-size 18px
         margin 0 0 5px 0
+      &-image-box
+        float:right;
+        display:table;
+        margin-left: 25px;
+        a
+          cursor:url(/js/fancybox/zoom.png),pointer
     &-tags
       padding-top 30px
       padding-bottom 10px
@@ -1220,6 +1226,7 @@ aside
 
 .lk {
   margin-top: 20px;
+  text-align: center
 }
 
 h1 {
@@ -1364,6 +1371,24 @@ h1 {
   .section__content-tabs
     margin-top: 30px
     align-items: center;
+
+
+input[name="phone"] {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.error
+  &__wrap
+    padding-bottom: 50px
+    background: url(../images/404.png) no-repeat center
+    -webkit-background-size: cover
+    background-size: cover
+    height: 399px
+    color: #fff
+  &__text
+    font-size: 28px
 
 /*baomastrEdit*/
 @media only screen and (max-width : 1960px)
@@ -1905,6 +1930,8 @@ h1 {
       margin: 0
   .hidden-xs
     display: none
+  .str404
+    font-size: 170px
 
 @media only screen and (max-width : 320px)
   body 
@@ -2015,6 +2042,9 @@ h1 {
   }
   .content__cell:nth-child(3) {
     width: 30%;
+  }
+  .section__content-feed-image-box{
+    display: none;
   }
 }
 @media only screen and (max-width : 500px)  {

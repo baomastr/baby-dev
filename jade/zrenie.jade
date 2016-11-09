@@ -1,0 +1,158 @@
+extends layout
+include mixins.jade
+
+block content
+    section.section__content
+        .container-wrapper
+            +bread([
+                ['Главная'],
+                ['Диагностика']
+            ])
+            .row.between
+                +sidebar([
+                    ['Виды диагностики']
+                ])
+                .section__content-main
+                    h1 Позаботьтесь о зрении своего ребенка сейчас
+
+                    .col__100.bg
+                        h2.padding__row Профилактика и лечение близорукости и дальнозоркости
+                        p.text.padding__row Для детей любого возраста зрение имеет очень важное значение, поскольку от этого зависит успеваемость ребенка и его характер. Если обратиться к врачу вовремя – большинство проблем со зрением можно остановить и скорректировать. В противном случае ребенка ожидают тяжелые последствия – миопия, гиперметропия, амблиопия.
+                        p.text В подавляющем числе случаев нарушения являются приобретенными по причине отсутствия у ребенка правильно сформированных привычек при чтении, письме, просмотре телевизора.
+
+
+                    h2.padding__row.ta-center Увидеть тревожные симптомы легко:
+
+                    .row.between.padding__row
+                        .col__20.xs__100.ta-center
+                            .img-wrapper
+                                img(src="/images/zrenie/rounded1.png", alt="")
+                            p.text.padding__row Прищуривание и частое моргание
+                        .col__20.xs__100.ta-center
+                            .img-wrapper
+                                img(src="/images/zrenie/rounded2.png", alt="")
+                            p.text.padding__row Прищуривание и частое моргание
+                        .col__20.xs__100.ta-center
+                            .img-wrapper
+                                img(src="/images/zrenie/rounded3.png", alt="")
+                            p.text.padding__row Прищуривание и частое моргание
+                        .col__20.xs__100.ta-center
+                            .img-wrapper
+                                img(src="/images/zrenie/rounded4.png", alt="")
+                            p.text.padding__row Прищуривание и частое моргание
+
+                    .bg
+                        h2.section__content-a.ta-center Мы предлагаем быстрый и комфортный для Вас и ребенка способ объективной диагностики состояния зрения за 1 визит со скидкой 50%.
+
+                    h2.padding__row.ta-center Увидеть тревожные симптомы легко:
+
+                    .padding__row.img-wrapper
+                        img(src="/images/zrenie/zrenie.jpg", alt="")
+
+
+                    h4.padding__row.ta-center Мы гарантируем:
+
+                    .row.between.ta-center.padding__row
+                        .col__25.xs__100.padding__row
+                            .img-wrapper
+                                img(src='/images/test/resume.png')
+                            p Индивидуальный подход к каждому ребенку
+                        .col__25.xs__100.padding__row
+                            .img-wrapper
+                                img(src='/images/test/charity.png')
+                            p Гарантируем  результат
+                        .col__25.xs__100.padding__row
+                            .img-wrapper
+                                img(src='/images/test/doctor.png')
+                            p Врачи с многолетним стажем практической работы
+
+                    h2.section__content-a.ta-center.padding__row Мы предлагаем быстрый и комфортный для Вас и ребенка способ объективной диагностики состояния зрения за 1 визит со скидкой 50%.
+
+                    .padding-row
+                        .table.actions
+                            .table__header
+                                .content__row
+                                    .content__cell Услуга
+                                    .content__cell.col__20 Цена, руб.
+                            .table__body
+                                .content.fadeIn.animated.open
+                                    .content__row
+                                        .content__cell Аллергенспецифическая иммунотерапия, препарат "Алюсталь" (базовый курс)
+                                        .content__cell.col__20
+                                            b 24 000
+                                    .content__row
+                                        .content__cell Аллергенспецифическая иммунотерапия, препарат "Фосталь" (базовый курс)
+                                        .content__cell.col__20
+                                            b 24 000
+                                    .content__row
+                                        .content__cell
+                                            | Аллергенспецифическая иммунотерапия, препарат "Алюсталь", поддерживающий курс (1 инъекция)
+                                        .content__cell.col__20
+                                            b 4 000
+                                    .content__row
+                                        .content__cell
+                                            | Аллергенспецифическая иммунотерапия, препарат "Алюсталь", начальный курс (1 инъекция)
+                                        .content__cell.col__20
+                                            b 24 000
+                                    .content__row
+                                        .content__cell
+                                            | Аллергенспецифическая иммунотерапия, препарат "Фосталь", поддерживающий курс (1 инъекция)
+                                        .content__cell.col__20
+                                            b 24 000
+                                    .content__row
+                                        .content__cell
+                                            | Аллергенспецифическая иммунотерапия, препарат "Фосталь", начальный курс (1 инъекция)
+                                        .content__cell.col__20
+                                            b 24 000
+                                    .content__row
+                                        .content__cell Аллергенспецифическая иммунотерапия с 1-м аллергеном (1 процедура)
+                                        .content__cell.col__20
+                                            b 24 000
+                                    .content__row
+                                        .content__cell Скарификационный тест на аллергены (9 аллергенов)
+                                        .content__cell.col__20
+                                            b 24 000
+                                    .content__row
+                                        .content__cell Скарификационный тест на аллергены (18)
+                                        .content__cell.col__20
+                                            b 24 000
+                                    .content__row
+                                        .content__cell Внутрикожный тест с неинфекционным аллергеном
+                                        .content__cell.col__20
+                                            b 24 000
+                                    .content__row
+                                        .content__cell.red Холодовой тест (Дункан-тест)
+                                        .content__cell.col__20
+                                            strike 24 000
+                                            | &nbsp;&nbsp;
+                                            br
+                                            b.red 5921
+
+                    h2.padding__row
+                        b Преимущества акции:
+
+                    ul.section__content-ul.padding__row.col__100
+                        li.section__content-li lorem
+
+                        li.section__content-li lorem
+
+                        li.section__content-li lorem
+
+                        li.section__content-li lorem
+
+                    h3.padding__row
+                        b Преимущества акции:
+
+                    ul.section__content-ul.padding__row.col__100
+                        li.section__content-li lorem
+
+                        li.section__content-li lorem
+
+                        li.section__content-li lorem
+
+                        li.section__content-li lorem
+
+                    h2.padding__row
+                        b Оставьте заявку&nbsp;
+                        b.red на бесплатную консультацию
+                        b &nbsp;по телефону

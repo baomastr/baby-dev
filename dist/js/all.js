@@ -1,4 +1,11 @@
+;
+
+(function ($) {
+    $(document);
+}(jQuery));
+
 $(document).ready(function() {
+
     if($('.main__wrapper aside .sidebar ul li').length){
         $('.main__wrapper aside .sidebar ul li').each(function(){
             //console.log($(this).find('a').attr('href') + " == " + location.pathname);
@@ -156,18 +163,21 @@ $(document).ready(function() {
     //
     // });
 
-    if($(window).width() > 736){
-        var slider7 = $('.bx-slider-7').bxSlider({
-            pager: false,
-            controls: true,
-            auto: false,
-            maxSlides: 1,
-            moveSlides: 1,
-        });
-    }
-    else {
-        $('.bx-slider-7').destroySlider();
-    }
+    if($('.bx-slider-7').length) {
+        if($(window).width() > 736){
+            var slider7 = $('.bx-slider-7').bxSlider({
+                pager: false,
+                controls: true,
+                auto: false,
+                maxSlides: 1,
+                moveSlides: 1,
+            });
+        }
+        else {
+            $('.bx-slider-7').destroySlider();
+        };
+    };
+
 
 
     // Scroll to top
@@ -189,16 +199,17 @@ $(document).ready(function() {
         heightDetect();
     });
 
-
     $(window).scroll(function() {
         if ($(this).scrollTop() >= $(window).height()){
             $('.header__sticky').removeClass('jsNone');
+            $('.sticky-content.fixed').removeClass('top');
         } else {
             $('.header__sticky').addClass('jsNone');
+            $('.sticky-content.fixed').addClass('top');
         }
     });
 
-    // toggle menu
+    /*toggle menu*/
     $('.jsTag').click(function(event) {
         $('.jsTag2').removeClass('active')
         $('aside').removeClass('active animated fadeInLeft');
@@ -296,38 +307,41 @@ $(document).ready(function() {
         });
     });
 
-    /*прилипающая шапка в таблицах start*/
-    var StickyElement = function(node){
-        var doc = $(document),
-            fixed = false,
-            anchor = node.find('.sticky-anchor'),
-            content = node.find('.sticky-content');
+    if($('#sticky').length) {
+        /*прилипающая шапка в таблицах start*/
+        var StickyElement = function(node){
+            var doc = $(document),
+                fixed = false,
+                anchor = node.find('.sticky-anchor'),
+                content = node.find('.sticky-content');
 
-        var onScroll = function(e){
-            var docTop = doc.scrollTop(),
-                anchorTop = anchor.offset().top;
+            var onScroll = function(e){
+                var docTop = doc.scrollTop(),
+                    anchorTop = anchor.offset().top;
 
-            // console.log('scroll', docTop, anchorTop);
-            if(docTop > anchorTop){
-                if(!fixed){
-                    anchor.height(content.outerHeight());
-                    content.addClass('fixed');
-                    fixed = true;
+                // console.log('scroll', docTop, anchorTop);
+                if(docTop > anchorTop){
+                    if(!fixed){
+                        anchor.height(content.outerHeight());
+                        content.addClass('fixed');
+                        fixed = true;
+                    }
+                }  else   {
+                    if(fixed){
+                        anchor.height(0);
+                        content.removeClass('fixed');
+                        fixed = false;
+                    }
                 }
-            }  else   {
-                if(fixed){
-                    anchor.height(0);
-                    content.removeClass('fixed');
-                    fixed = false;
-                }
-            }
+            };
+
+            $(window).on('scroll', onScroll);
         };
 
-        $(window).on('scroll', onScroll);
-    };
+        var demo = new StickyElement($('#sticky'));
+        /*прилипающая шапка в таблицах end*/
+    }
 
-    var demo = new StickyElement($('#sticky'));
-    /*прилипающая шапка в таблицах end*/
 
     /*спойлинг таблиц*/
     $('.table__title').first().siblings('.content').addClass("open")
@@ -341,15 +355,14 @@ $(document).ready(function() {
             $('.content__cell:nth-child(1)').css('width','92%');
         }
         if($('.content__row').eq(0).find('.content__cell').length == 4){
-            $('.content__cell:nth-child(1)').css('width','72%');   
+            $('.content__cell:nth-child(1)').css('width','72%');
         }
     }
-    
+
     try{
-       $('.fancybox').fancybox(); 
+        $('.fancybox').fancybox();
     }catch(e){
-        
+
     }
 
 });
-

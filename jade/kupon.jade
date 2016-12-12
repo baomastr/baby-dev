@@ -1,0 +1,22 @@
+extends layout
+include mixins.jade
+
+block content
+    section.section__content
+        .container-wrapper
+            +bread([
+                ['Главная'],
+                ['Диагностика']
+            ])
+            .row.between
+                +sidebar([
+                    ['Виды диагностики']
+                ])
+                .section__content-main
+                    h3.section__content-h3 Сфотографируйте купон или покажите эту страницу на экране смартфона
+                    .row.between.kupon
+                        .col__55.img-wrapper
+                            img(src='images/kupon/kupon.png')
+                        .col__35.img-wrapper
+                            img(src='images/kupon/iphone.png')
+

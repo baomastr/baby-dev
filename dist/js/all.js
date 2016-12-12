@@ -1,5 +1,4 @@
 ;
-
 (function ($) {
     $(document);
 }(jQuery));
@@ -365,4 +364,17 @@ $(document).ready(function() {
 
     }
 
+    
+
 });
+
+
+window.onload = function(){
+    if($('#b1').length){
+        console.log('test');
+        var b2 = document.getElementById("b1");
+        var b1 = document.getElementById("b2");
+        b1.parentNode.insertBefore(b2, b1);
+    }
+};
+

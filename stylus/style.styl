@@ -1386,6 +1386,35 @@ input[name="phone"] {
 .kupon
   align-items: center
 
+.act
+  &-complex
+    background: url(../images/actions/bg_act-complex.jpg) center no-repeat
+    background-size: cover
+    &__wrapper
+      padding: 20px
+    &__bluebox
+      color: white;
+      display: inline-block
+      padding: 10px
+      background-color: blue
+      font-size: 1.3rem
+  &-otlichno
+    background: url(../images/actions/bg_act-otlichno.png) center left no-repeat
+    height: 258px;
+    max-width: 865.8px
+    &__wrapper
+      padding: 150px 20px 30px 30px
+.redbox
+  color: #fff
+  font-size: 1.5rem
+  padding: 20px
+  background-color: #e9465c;
+  & > span
+    font-size: 1.5rem
+
+.act-otlichno--sm
+  display: none
+
 /*baomastrEdit*/
 @media only screen and (max-width: 1960px)
   .cloud3
@@ -1845,6 +1874,18 @@ input[name="phone"] {
       display: inline-block
       width: 100%
 
+
+  .list
+    &__item
+      width: 100%
+
+  .act
+    &-otlichno
+      display: none
+      &--sm
+        display: inline-block
+        font-size: 1.3rem
+
 //.row
 //  //flex-wrap wrap
 //  .col__55,
@@ -2076,6 +2117,12 @@ input[name="phone"] {
 
   .xs__100
     width: 100%
+
+  .list
+    &--xs
+      & > .col__20
+        width: 50%
+
 
 @media only screen and (max-width: 320px)
   body

@@ -6,11 +6,12 @@
   margin 0 auto
   position: relative
 // Fonts
-roboto = 'Roboto', sans-serif;
-ptsans = 'Pt sans', sans-serif;
+//roboto = 'Roboto', sans-serif;
+//ptsans = 'Pt sans', sans-serif;
 euroreg = "eurofurence  regular"
 eurobold = "eurofurence  bold"
 euroit = "eurofurence  italic"
+
 bold()
   font-family eurobold
 it()
@@ -142,7 +143,7 @@ trs-slow()
   width 100%
   color blue
   background: grey3
-  font-size 18px
+  font-size calc(18px - .2rem)
   padding 10px 20px 
   border-radius (20px)
   border none
@@ -154,7 +155,7 @@ trs-slow()
   width 100%
   color blue
   background: grey3
-  font-size 18px
+  font-size calc(18px - .2rem)
   padding 10px 20px 
   border-radius (20px)
   border none
@@ -247,7 +248,7 @@ button
 .button
   height 33px 
   line-height 29px
-  font-size 24px
+  font-size calc(24px - .2rem)
   padding 0 34px
   display inline-block 
   background-color: red
@@ -255,13 +256,13 @@ button
   border-radius (20px)
 .button_big
   width 220px
-  font-size 18px
+  font-size calc(18px - .2rem)
   text-transform: uppercase
   height 42px
   line-height 42px
   padding 0 15px
 .button_grand 
-  font-size 24px
+  font-size calc(24px - .2rem)
   bold()
   text-transform: uppercase
   height 50px 
@@ -269,7 +270,7 @@ button
   border-radius (30px)
   padding 0 20px
 .button_grand-m 
-  font-size 18px
+  font-size calc(18px - .2rem)
   bold()
   text-transform: uppercase
   height 50px 
@@ -278,7 +279,7 @@ button
   padding 0 60px
   box-shadow 0 2px 0 #d2ecf7
 .button_grand-l
-  font-size 24px
+  font-size calc(24px - .2rem)
   bold()
   height 50px 
   line-height 45px
@@ -301,12 +302,12 @@ button
   background: white
   color blue
   text-transform uppercase
-  font-size 18px
+  font-size calc(18px - .2rem)
 .button_white 
   background: white 
   color red
   box-shadow 0 3px 0px #bb465c;
-  font-size 18px
+  font-size calc(18px - .2rem)
   bold()
   line-height 32px
 .button_footer
@@ -344,18 +345,18 @@ for i in (1..100)
 
 // H heading 
 h2 
-  font-size 36px
+  font-size calc(36px - .2rem)
   font-weight 300
 h3 
-  font-size 30px
+  font-size calc(30px - .2rem)
 h4 
-  font-size 30px
+  font-size calc(30px - .2rem)
   font-weight 300
 h5 
-  font-size 16px
+  font-size calc(16px - .2rem)
   font-weight 300
 h6 
-  font-size 14px 
+  font-size calc(14px - .2rem)
   font-weight 300
   
 // Elements
@@ -365,14 +366,14 @@ menu
 span 
   display inline-block
   vertical-align middle
-  font-size 15px
+  font-size calc(15px - .2rem)
 a 
   text-decoration none
   display inline-block
 h1, h2, h3, h4, h5, h6 
   font-weight normal
 .text 
-  font-size 15px
+  font-size calc(15px - .2rem)
   line-height 25px   
   margin 0 0 25px 0
 .text_milk
@@ -390,7 +391,7 @@ auto()
 // Banner-link
 .banner__link 
   color brown6
-  font-size 14px
+  font-size calc(14px - .2rem)
 img()
   width 100% 
   max-width 100%
@@ -450,16 +451,16 @@ th
     &:hover 
       background: #4bb5ac
   &__title 
-    font-size 24px 
+    font-size calc(24px - .2rem)
     color milk
     bordered()
     &:after 
       margin 30px 0 0 0
   &__link 
     color orange
-    font-size 15px
+    font-size calc(15px - .2rem)
     &_sm 
-      font-size 14px
+      font-size calc(14px - .2rem)
       color @color
       display block
   &__links
@@ -478,7 +479,7 @@ th
     margin 0 0 25px 0
   &__tooltip 
     color brown6
-    font-size 14px
+    font-size calc(14px - .2rem)
     line-height 23px
     margin 6px 0 0 0
   &__generate
@@ -496,7 +497,7 @@ th
     height 120px !important
   &__text 
     color white
-    font-size 14px 
+    font-size calc(14px - .2rem)
     margin 25px 0 0 0
     bordered()
     &:after 

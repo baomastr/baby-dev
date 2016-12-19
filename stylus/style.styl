@@ -12,6 +12,10 @@
 @import '../stylus/typography'
 @import nib
 
+//:root {
+//  font-size: calc(.7rem!important- .2rem)
+//}
+
 body
   font-family: euroreg
   max-width 1920px
@@ -27,7 +31,7 @@ body
     padding 10px 10px
     display none
     .str1
-      font-size 20px
+      font-size calc(20px - .2rem)
       margin-left 10px
     &-icon
       sprite($sprite-open)
@@ -50,7 +54,7 @@ body
       width 210px
     .button
       text-transform: uppercase
-      font-size 18px
+      font-size calc(18px - .2rem)
       line-height 28px
     .button_red
       border 2px solid red
@@ -71,7 +75,7 @@ body
 
   &__link
     color black
-    font-size 18px
+    font-size calc(18px - .2rem)
     text-align: center
     align-self: center;
     height 53px
@@ -107,7 +111,7 @@ body
     color white
   &__link
     color white
-    font-size 16px
+    font-size calc(16px - .2rem)
     text-transform uppercase
     bold()
     &:hover
@@ -154,7 +158,7 @@ body
         width 100%
         height auto
     &-date
-      font-size 105px
+      font-size calc(105px - .2rem)
       bold()
       color blue8
       &-wrapper
@@ -162,7 +166,7 @@ body
         position: relative
         top: -23px;
     &-month
-      font-size 24px
+      font-size calc(24px - .2rem)
       text-transform: uppercase
       it()
       color blue9
@@ -177,7 +181,7 @@ body
     &-title
       color black
       bold()
-      font-size 24px
+      font-size calc(24px - .2rem)
       margin 0 0 5px 0
       &:hover
         trs()
@@ -185,15 +189,15 @@ body
         text-decoration: underline
     &-comment
       color grey
-      font-size 16px
+      font-size calc(16px - .2rem)
       it()
     &-text
       color grey2
-      font-size 16px
+      font-size calc(16px - .2rem)
       line-height 20px
       margin 20px 0 20px 0
     &-more
-      font-size 18px
+      font-size calc(18px - .2rem)
       text-transform uppercase
       color red
       &:before
@@ -207,7 +211,7 @@ body
     &-col
       margin 0 0 30px 0
     &-h2
-      font-size 30px
+      font-size calc(30px - .2rem)
       bold()
       margin 15px 0 30px 0
 
@@ -221,7 +225,7 @@ body
       margin 0
       padding 50px 0 40px 0
     &-text
-      font-size 24px
+      font-size calc(24px - .2rem)
       it()
       color white
       margin 10px 0 40px 0
@@ -236,13 +240,13 @@ body
         sprite($sprite-icon7)
         display inline-block
     &-name
-      font-size 21px
+      font-size calc(21px - .2rem)
       bold()
       color blue3
       text-transform: uppercase
     &-date
       color white
-      font-size 18px
+      font-size calc(18px - .2rem)
     &-controls
       width 100px
       margin 40px auto 0 auto
@@ -268,7 +272,7 @@ body
       margin 0 0 10px 0
     &-link
       color blue2
-      font-size 20px
+      font-size calc(20px - .2rem)
       bordered(blue10, blue10)
       &:hover
         color blue10
@@ -316,7 +320,7 @@ body
             sprite($sprite-thanx)
 
     &-text
-      font-size 16px
+      font-size calc(16px - .2rem)
       line-height 24px
       margin 40px 0 0 0
       padding 0 112px 0 50px
@@ -353,7 +357,7 @@ body
 
     &-link
       color white
-      font-size 18px
+      font-size calc(18px - .2rem)
       text-align: center
       line-height 22px
     &-img
@@ -389,7 +393,7 @@ body
         &.between
           justify-content: space-between
       &-h3
-        font-size 24px
+        font-size calc(24px - .2rem)
         color grey2
         bold()
         margin 0 0 10px 0
@@ -397,15 +401,15 @@ body
         span
           color white
           background: red
-          font-size 25px
+          font-size calc(25px - .2rem)
           padding 5px 20px
           margin-right 10px
           border-radius (20px)
         a
           color red
-          font-size 18px
+          font-size calc(18px - .2rem)
       &-link
-        font-size 18px
+        font-size calc(18px - .2rem)
         color blue2
         margin 10px 0
         &:before
@@ -425,7 +429,7 @@ body
       border 1px solid blue4
       td
         vertical-align: middle;
-        font-size 18px
+        font-size calc(18px - .2rem)
         padding 10px
         &:nth-child(2)
         &:nth-child(3)
@@ -442,7 +446,7 @@ body
         background: blue
         color white
         text-align: left
-        font-size 18px
+        font-size calc(18px - .2rem)
         bold()
         border-left 1px solid blue4
         padding 15px
@@ -574,7 +578,7 @@ body
     &-a
       color red
       bold()
-      font-size 24px
+      font-size calc(24px - .2rem)
       margin 0 0 15px 0
     &-quest-top
       border 2px solid green
@@ -586,27 +590,27 @@ body
       p
         bold()
         color green
-        font-size 16px
+        font-size calc(16px - .2rem)
       .name
         color blue
         it()
-        font-size 18px
+        font-size calc(18px - .2rem)
         margin 10px 0 0 0
     &-q
-      font-size 24px
+      font-size calc(24px - .2rem)
       bold()
       color grey2
       margin 0 0 8px 0
     &-theme
       margin 10px 0 10px 0
       span
-        font-size 18px
+        font-size calc(18px - .2rem)
         color grey2
         bold()
         display inline-block
       a
         color blue
-        font-size 16px
+        font-size calc(16px - .2rem)
         margin-left 5px
         vertical-align: bottom
         &:hover
@@ -622,7 +626,7 @@ body
         margin 5px 0
       .author
         color blue
-        font-size 18px
+        font-size calc(18px - .2rem)
         margin 0 0 5px 0
       &-image-box
         float: right;
@@ -634,13 +638,13 @@ body
       padding-top 30px
       padding-bottom 10px
       span
-        font-size 16px
+        font-size calc(16px - .2rem)
         color grey2
         bold()
         text-transform: uppercase
         margin-right 15px
       .tags
-        font-size 14px
+        font-size calc(14px - .2rem)
         bold()
         color grey
         margin-left 2px
@@ -649,7 +653,7 @@ body
     &-dates
       span
         color grey
-        font-size 16px
+        font-size calc(16px - .2rem)
         bold()
         padding-bottom 4px
         &:first-child
@@ -661,7 +665,7 @@ body
           text-transform: uppercase
           &:before
             content '.'
-            font-size 20px
+            font-size calc(20px - .2rem)
             color rgba(118, 118, 118, 0.47);
             margin 0 5px
             position: relative
@@ -722,11 +726,11 @@ body
         border-top-right-radius: 15px;
     &-title
       hover()
-      font-size 24px
+      font-size calc(24px - .2rem)
       bold()
       line-height 26px
     &-dol
-      font-size 18px
+      font-size calc(18px - .2rem)
       margin 20px 0 0 0
       color blue
     &-name
@@ -762,7 +766,7 @@ body
       padding 20px 0
     &-par
       min-height: 50px /*edit*/
-      font-size 24px
+      font-size calc(24px - .2rem)
       hover()
       color blue
     &-item2
@@ -779,7 +783,7 @@ body
           trs()
     &-link
       color blue2
-      font-size 18px
+      font-size calc(18px - .2rem)
       bordered(blue10, blue10)
       &:hover
         color blue10
@@ -810,12 +814,12 @@ body
         display: block
         margin 20px 0 20px 0
     &-h4
-      font-size 36px
+      font-size calc(36px - .2rem)
       bold()
       color blue5
       span
         vertical-align: top
-        font-size 36px
+        font-size calc(36px - .2rem)
         text-transform: uppercase
     &-adds
       margin 50px 0 15px 0
@@ -830,7 +834,7 @@ body
       border-radius (20px)
     &-news
       &-more
-        font-size 16px
+        font-size calc(16px - .2rem)
       &-photo
         border-radius 20px
         overflow hidden
@@ -840,7 +844,7 @@ body
           margin 0 0 20px 0
       &-title
         bold()
-        font-size 18px
+        font-size calc(18px - .2rem)
         color grey2
         margin 0 0 5px 0
       &-text
@@ -850,7 +854,7 @@ body
         margin 0 0 20px 0
     &-cost
       color green
-      font-size 18px
+      font-size calc(18px - .2rem)
       bold()
     &-card
       padding 30px 30px 0 30px
@@ -907,7 +911,7 @@ body
         padding-right 50px
         padding-bottom 30px
     &-h5
-      font-size 24px
+      font-size calc(24px - .2rem)
       color grey2
       bold()
       margin 30px 0
@@ -943,7 +947,7 @@ body
       span
         border 2px solid green
         border-radius (10px)
-        font-size 20px
+        font-size calc(20px - .2rem)
         bold()
         color green
         margin-right 5px
@@ -967,7 +971,7 @@ body
       padding: 10px
       a
         height: auto
-        font-size: 20px
+        font-size: calc(20px - .2rem)
         line-height: 33px
         &:hover
           background-color: blue5
@@ -981,7 +985,7 @@ body
     &-link
       bordered(white, blue3)
       color white
-      font-size 24px
+      font-size calc(24px - .2rem)
       bold()
       position: relative
       &:before
@@ -1020,7 +1024,7 @@ aside
   .section__content-adds2
     padding 15px
   .span-2
-    font-size 23px
+    font-size calc(23px - .2rem)
     line-height 30px
     margin 0 0 25px 0
 
@@ -1037,11 +1041,11 @@ aside
     vertical-align: middle
     color white
     bordered(white, blue3)
-    font-size 18px
+    font-size calc(18px - .2rem)
     &:hover
       color blue3
   &__titel
-    font-size 23px
+    font-size calc(23px - .2rem)
     color white
     bold()
     text-transform: uppercase
@@ -1057,11 +1061,11 @@ aside
     margin 10px 0
   &__sub-link
     color white
-    font-size 18px
+    font-size calc(18px - .2rem)
     &:hover
       color blue3
     &--active
-      font-size: 18px
+      font-size: calc(18px - .2rem)
       color: #71fff0
       text-decoration: underline
 
@@ -1069,7 +1073,7 @@ aside
   margin 25px 0
 
   &__item
-    //font-size 18px
+    //font-size calc(18px - .2rem)
     color black
     display inline-block
     a
@@ -1097,7 +1101,7 @@ aside
         color white
         border-radius 20px
         background blue
-        font-size 18px
+        font-size calc(18px - .2rem)
         padding 0 20px
         &:after
           sprite($sprite-arrow)
@@ -1111,7 +1115,7 @@ aside
       background: blue
       color white
   &__link
-    font-size 24px
+    font-size calc(24px - .2rem)
     color blue
     bold()
     height 40px
@@ -1131,7 +1135,7 @@ aside
     display: flex
     &:before
     &:after
-      font-size: 60px
+      font-size: calc(60px - .2rem)
 
 .lastnarrow
   tr
@@ -1216,7 +1220,7 @@ aside
 }
 
 h1 {
-  font-size: 40px;
+  font-size: calc(40px - .2rem)
   line-height: 45px;
   font-family: "eurofurence  bold";
   margin-bottom: 20px
@@ -1313,9 +1317,9 @@ h1 {
   p,
   .text,
   .section__content-li
-    //font-size: 18px;
+    //font-size: calc(18px - .2rem)
     color: #252930;
-    line-height: 25px;
+    line-height: 23px;
     margin: 0
     &:last-child
       margin-bottom: 0
@@ -1346,7 +1350,7 @@ h1 {
   //  height: 0;
 
   p
-    margin: 20px 0
+    margin: 10px 0
 
 .section__content-table-wrapper
   margin-bottom: 20px
@@ -1371,7 +1375,7 @@ input[name="phone"] {
     height: 399px
     color: #fff
   &__text
-    font-size: 28px
+    font-size: calc(28px - .2rem)
 
 .actions-link
   line-height: 33px;
@@ -1397,7 +1401,7 @@ input[name="phone"] {
       display: inline-block
       padding: 10px
       background-color: blue
-      font-size: 1.3rem
+      font-size: calc(1.3rem- .2rem)
   &-otlichno
     background: url(../images/actions/bg_act-otlichno.png) center left no-repeat
     height: 258px;
@@ -1406,13 +1410,16 @@ input[name="phone"] {
       padding: 150px 20px 30px 30px
 .redbox
   color: #fff
-  font-size: 1.5rem
+  font-size: calc(1.5rem- .2rem)
   padding: 20px
   background-color: #e9465c;
   & > span
-    font-size: 1.5rem
+    font-size: calc(1.5rem- .2rem)
 
 .act-otlichno--sm
+  display: none
+
+.ya-share2__list_direction_horizontal > .ya-share2__item.ya-share2__item_service_odnoklassniki
   display: none
 
 /*baomastrEdit*/
@@ -1460,7 +1467,7 @@ input[name="phone"] {
     display block
 
   .str1
-    font-size 23px
+    font-size calc(23px - .2rem)
     display block
 
   .header__col:nth-child(2)
@@ -1496,6 +1503,7 @@ input[name="phone"] {
 
   .header__responsive
     display flex
+    padding-top: 50px;
 
   .header__top
     display none
@@ -1527,14 +1535,30 @@ input[name="phone"] {
   .header__bottom
     overflow-y hidden
 
+  .menu
+    position: fixed;
+    height: 40px;
+    top: 40px;
+    right: 0;
+    left: 0;
+    z-index: 900;
+    transform: translate3d(0,-100%,0);
+    transition: transform .6s cubic-bezier(.19,1,.22,1);
+    will-change: transform;
+    background-color: #63B6AC;
+
   .menu_ul
     display none
     border-top 1px solid #b5deea;
-    margin-top 0
     left 0
-    margin-left -20px
-    margin-right -20px
     background: white;
+    position: fixed;
+    top: 40px;
+    width: 100%;
+    height: calc(100vh - 40px);
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    margin: 0;
     .menu__item
       padding 0
       border-left none
@@ -1605,7 +1629,7 @@ input[name="phone"] {
 
 @media only screen and (max-width: 769px)
   .span-2
-    font-size 21px
+    font-size calc(21px - .2rem)
 
 @media only screen and (max-width: 736px)
   .section__content-method-bottom .row
@@ -1699,9 +1723,9 @@ input[name="phone"] {
     width 100%
 
   .section__content-h4
-    font-size 25px
+    font-size calc(25px - .2rem)
     span
-      font-size 25px
+      font-size calc(25px - .2rem)
 
   .section__content-items
     .responsive-column
@@ -1793,7 +1817,7 @@ input[name="phone"] {
     margin-bottom 10px
 
   .section__h2
-    font-size 24px
+    font-size calc(24px - .2rem)
 
   .section__h2:after, .section__h2:before
     top -5px
@@ -1884,7 +1908,7 @@ input[name="phone"] {
       display: none
       &--sm
         display: inline-block
-        font-size: 1.3rem
+        font-size: calc(1.3rem- .2rem)
 
 //.row
 //  //flex-wrap wrap
@@ -1904,7 +1928,7 @@ input[name="phone"] {
     display block
 
   body .responsive-number
-    font-size 20px
+    font-size calc(20px - .2rem)
     width 100%
     left 0
     text-align: center
@@ -1923,7 +1947,7 @@ input[name="phone"] {
         display inline-block
         vertical-align: bottom
       span
-        font-size 12px
+        font-size calc(12px - .2rem)
         width 85%
         position relative
         top 3px
@@ -1974,7 +1998,7 @@ input[name="phone"] {
 
   .str19
   .str18
-    font-size 25px
+    font-size calc(25px - .2rem)
 
   .section__h2
     &:after
@@ -1987,7 +2011,7 @@ input[name="phone"] {
     width 100%
 
   .section__content-h2
-    font-size 25px
+    font-size calc(25px - .2rem)
 
   .section__content-method-bottom
     .buttons
@@ -2050,7 +2074,7 @@ input[name="phone"] {
       margin auto auto
     .section__h2
       padding-bottom 10px
-      font-size 18px
+      font-size calc(18px - .2rem)
 
   .section__sl-controls
     margin-top 20px
@@ -2059,12 +2083,12 @@ input[name="phone"] {
     width 100%
 
   .section__content-method p
-    font-size 18px
+    font-size calc(18px - .2rem)
 
   .section__sl-text
-    font-size 13px
+    font-size calc(13px - .2rem)
     p
-      font-size 13px
+      font-size calc(13px - .2rem)
       line-height 20px
 
   .section__top .responsive-column .col__23
@@ -2110,10 +2134,10 @@ input[name="phone"] {
     display: none
 
   .str404
-    font-size: 170px
+    font-size: calc(170px - .2rem)
 
   h1
-    font-size: 24px
+    font-size: calc(24px - .2rem)
 
   .xs__100
     width: 100%
@@ -2132,7 +2156,7 @@ input[name="phone"] {
   display: block;
   width: 100%;
   border-bottom: 1px solid #53bae9;
-  font-size: 18px;
+  font-size: calc(18px - .2rem)
 }
 
 .table .content {
@@ -2199,7 +2223,7 @@ input[name="phone"] {
 .title {
   text-align: center;
   &-blue {
-    font-size: 24px
+    font-size: calc(24px - .2rem)
   }
 }
 
@@ -2219,6 +2243,37 @@ input[name="phone"] {
   z-index: 1;
   &.top
     top: 0
+
+.scrollToTop
+
+  display:none;
+  text-decoration:none;
+  position:fixed;
+  bottom:10px;
+  right:10px;
+  overflow:hidden;
+  width:51px;
+  height:51px;
+  border:none;
+  text-indent:100%;
+  background:url(/images/ui.totop.png) no-repeat left top;
+
+
+  &:hover
+    background:url(/images/ui.totop.png) no-repeat left -51px;
+  //  width:51px;
+  //  height:51px;
+  //  display:block;
+  //  overflow:hidden;
+  //  float:left;
+  //  opacity: 0;
+  //  -moz-opacity: 0;
+  //  //filter:alpha(opacity=0);
+  //
+  //&:active
+  //&:focus
+  //  outline:none;
+
 
 @media only screen and (max-width: 1166px) {
   .table .sticky-content.fixed {
@@ -2256,6 +2311,7 @@ input[name="phone"] {
   .section__content-feed-image-box {
     display: none;
   }
+
 }
 
 @media only screen and (max-width: 500px) {
@@ -2270,7 +2326,9 @@ input[name="phone"] {
     min-width: 320px;
   }
 }
-
+//:root {
+//  font-size: calc(.7rem!important- .2rem)
+//}
 //.section__content-main
 //  .start
 //    justify-content: flex-start
